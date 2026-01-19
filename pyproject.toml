@@ -1,0 +1,20 @@
+[project]
+name = "skills-agent-lib"
+version = "0.1.0"
+description = "Portable agentic skills library with init scaffolding"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.0",
+    "rich>=10.0",
+]
+
+[project.scripts]
+skills-agent = "skills_agent_lib.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/skills_agent_lib"]

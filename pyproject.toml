@@ -4,6 +4,17 @@ version = "0.1.0"
 description = "Portable agentic skills library with init scaffolding"
 readme = "README.md"
 requires-python = ">=3.9"
+authors = [
+    { name = "ApexIQ", email = "contact@apexiq.ai" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+]
+keywords = ["ai", "agents", "scaffolding", "skills", "productivity"]
 dependencies = [
     "click>=8.0",
     "rich>=10.0",
@@ -11,6 +22,11 @@ dependencies = [
 
 [project.scripts]
 skills-agent = "skills_agent_lib.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/ApexIQ/skills-agent"
+Issues = "https://github.com/ApexIQ/skills-agent/issues"
+Repository = "https://github.com/ApexIQ/skills-agent.git"
 
 [build-system]
 requires = ["hatchling"]

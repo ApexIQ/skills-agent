@@ -96,6 +96,18 @@ skills-agent add memory-patterns
 
 ---
 
+## 🗺️ Future Plans
+
+We are evolving `skills-agent` into a central hub for agentic expertise. Our upcoming roadmap includes:
+
+- **Central Skill Registry**: A hosted platform to browse, search, and share community-verified skills.
+- **Framework Integrations**: Native scaffolding for Agno, LangChain, CrewAI, and more.
+- **Skill Versioning**: Intelligent `update` command to sync new best practices without overwriting project-specific notes.
+- **TUI Mode**: An interactive terminal interface for selecting and managing skills.
+- **Agent Self-Installation**: APIs that allow agents to autonomously search for and install the skills they need to complete a task.
+
+---
+
 ## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.

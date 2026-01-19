@@ -1,6 +1,8 @@
 import os
 import shutil
 import click
+import requests
+import re
 from pathlib import Path
 from rich.console import Console
 from rich.table import Table
@@ -8,6 +10,60 @@ from rich.table import Table
 console = Console()
 
 TEMPLATE_DIR = Path(__file__).parent / "templates"
+
+def download_github_dir(repo_url, dest_dir):
+    """Downloads a directory from GitHub using the API."""
+    # Pattern: https://github.com/OWNER/REPO/tree/BRANCH/PATH
+    match = re.search(r"github\.com/([^/]+)/([^/]+)/tree/([^/]+)/(.+)", repo_url)
+    if not match:
+        # Try raw content pattern or simpler repo/path
+        match = re.search(r"github\.com/([^/]+)/([^/]+)/blob/([^/]+)/(.+)", repo_url)
+        
+    if not match:
+        console.print("[red]Error: Invalid GitHub directory URL.[/red]")
+        console.print("Expected: https://github.com/OWNER/REPO/tree/BRANCH/PATH")
+        return False
+
+    owner, repo, branch, path = match.groups()
+    api_url = f"https://api.github.com/repos/{owner}/{repo}/contents/{path}?ref={branch}"
+    
+    try:
+        response = requests.get(api_url)
+        response.raise_for_status()
+        items = response.json()
+        
+        # Check if the response is a list (directory contents)
+        if not isinstance(items, list):
+            console.print(f"[red]Error: URL must point to a directory, not a file.[/red]")
+            return False
+
+        dest_dir.mkdir(parents=True, exist_ok=True)
+        
+        with console.status(f"[bold blue]Downloading skill files...") as status:
+            for item in items:
+                if item["type"] == "file":
+                    file_url = item["download_url"]
+                    file_path = dest_dir / item["name"]
+                    # Download file content
+                    file_resp = requests.get(file_url)
+                    file_resp.raise_for_status()
+                    with open(file_path, "wb") as f:
+                        f.write(file_resp.content)
+                elif item["type"] == "dir":
+                    # We only support shallow folders for now
+                    pass
+        
+        # Verify if it's a valid skill
+        if not (dest_dir / "SKILL.md").exists():
+            console.print(f"[yellow]Warning: Downloaded folder does not contain SKILL.md.[/yellow]")
+            
+        return True
+    except requests.exceptions.HTTPError as he:
+        console.print(f"[red]GitHub API Error: {he.response.status_code} - {he.response.reason}[/red]")
+        return False
+    except Exception as e:
+        console.print(f"[red]Download failed: {str(e)}[/red]")
+        return False
 
 @click.group()
 def main():
@@ -83,8 +139,8 @@ def init(minimal, agents_md_only):
     
     console.print("\n[bold green]Successfully initialized .agents structure![/bold green]")
 
-@main.command()
-def list():
+@main.command(name="list")
+def list_skills():
     """List all available portable skills"""
     skills_dir = TEMPLATE_DIR / ".agents" / "skills"
     if not skills_dir.exists():
@@ -112,24 +168,39 @@ def list():
     console.print(table)
 
 @main.command()
-@click.argument("skill_name")
-def add(skill_name):
-    """Add a specific skill to your .agents/skills folder"""
-    src_skill = TEMPLATE_DIR / ".agents" / "skills" / skill_name
-    if not src_skill.exists():
-        console.print(f"[red]Error: Skill '{skill_name}' not found.[/red]")
-        return
-        
+@click.argument("name_or_url")
+def add(name_or_url):
+    """Add a skill from local library or GitHub URL"""
     dest_dir = Path.cwd() / ".agents" / "skills"
     dest_dir.mkdir(parents=True, exist_ok=True)
-    
-    dest_skill = dest_dir / skill_name
-    if dest_skill.exists():
-        console.print(f"[yellow]Skill '{skill_name}' already exists.[/yellow]")
-        return
+
+    if name_or_url.startswith("http"):
+        # Remote GitHub Add
+        skill_name = name_or_url.split("/")[-1]
+        dest_skill = dest_dir / skill_name
         
-    shutil.copytree(src_skill, dest_skill)
-    console.print(f"[green][OK][/green] Added skill: {skill_name}")
+        if dest_skill.exists():
+            console.print(f"[yellow]Skill '{skill_name}' already exists.[/yellow]")
+            return
+            
+        if download_github_dir(name_or_url, dest_skill):
+            console.print(f"[green][OK][/green] Successfully added remote skill: {skill_name}")
+    else:
+        # Local Add
+        skill_name = name_or_url
+        src_skill = TEMPLATE_DIR / ".agents" / "skills" / skill_name
+        
+        if not src_skill.exists():
+            console.print(f"[red]Error: Skill '{skill_name}' not found in local library.[/red]")
+            return
+            
+        dest_skill = dest_dir / skill_name
+        if dest_skill.exists():
+            console.print(f"[yellow]Skill '{skill_name}' already exists.[/yellow]")
+            return
+            
+        shutil.copytree(src_skill, dest_skill)
+        console.print(f"[green][OK][/green] Added skill: {skill_name}")
 
 if __name__ == "__main__":
     main()

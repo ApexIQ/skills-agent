@@ -25,7 +25,9 @@ skills-agent init
 
 ## ✨ Key Features
 
-- **23 Specialized Skills**: Out-of-the-box expertise for TDD, Security Audits, Context Engineering, and more.
+- **600+ Skills (Categorized)**: Massive library organized into 9 broad categories (Security, Data-AI, Infrastructure...).
+- **Tag-Based Bundles**: Install skills by topic tags (e.g., `python`, `react`, `aws`) using simple CLI flags.
+- **23 Core Skills**: Out-of-the-box expertise for TDD, Security Audits, Context Engineering, and more.
 - **AGENTS.md Standard**: Native support for the [agents.md](https://agents.md) open standard ("README for Agents").
 - **Agentic Workflows**: Pre-defined templates for agentic loops, sub-agent coordination, and memory management.
 - **Project Structure**: Scaffolds dedicated folders for `guides/`, `plans/`, and `workflows/`.
@@ -33,20 +35,28 @@ skills-agent init
 
 ---
 
-## 🛠 Included Skills
+## 🛠 Included Skills library
 
-Run `skills-agent list` to see all 23 available skills. Highlights include:
+The library contains **626 skills** across 9 major categories:
+1. **Architecture** (60 skills)
+2. **Business** (37 skills)
+3. **Data-AI** (92 skills)
+4. **Development** (81 skills)
+5. **General** (128 skills)
+6. **Infrastructure** (78 skills)
+7. **Security** (112 skills)
+8. **Testing** (22 skills)
+9. **Workflow** (16 skills)
+
+Run `skills-agent list --list-categories` to explore.
 
 | Category | Skill | Description |
 |----------|-------|-------------|
 | **AI Strategy** | `memory-patterns` | Manage agent context window and long-term memory. |
 | | `prompt-engineering` | Best practices for few-shot and chain-of-thought prompts. |
-| | `agentic-workflow` | Implements the Anthropic Agentic Loop (Gather → Act → Verify). |
 | **Engineering** | `test-driven-development` | Structured TDD (Red → Green → Refactor) for agents. |
-| | `security-audit` | OWASP-based security checklists for automated reviews. |
-| | `git-workflow` | Conventional commits and branching strategies. |
+| **Security** | `security-audit` | OWASP-based security checklists for automated reviews. |
 | **Fullstack** | `fastapi-best-practices` | Patterns for high-performance Python backends. |
-| | `frontend-best-practices` | Modern React/Vite/Tailwind patterns. |
 
 ---
 
@@ -82,10 +92,26 @@ Create the directory structure and templates without the pre-built skills.
 skills-agent init --minimal
 ```
 
+### Install by Category or Tag
+Install bundles of skills for specific domains.
+```bash
+# Install all Security skills
+skills-agent init --category security
+
+# Install all Python skills
+skills-agent init --tag python
+```
+
 ### List Available Skills
 View the library of portable expertise.
 ```bash
 skills-agent list
+
+# Filter by category
+skills-agent list --category data-ai
+
+# Filter by tag
+skills-agent list --tag react
 ```
 
 ### Update Skills

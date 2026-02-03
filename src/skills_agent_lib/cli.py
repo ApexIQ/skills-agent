@@ -4,6 +4,8 @@ import click
 import requests
 import re
 import yaml
+import json
+import zipfile
 from pathlib import Path
 from rich.console import Console
 from rich.table import Table
@@ -11,6 +13,31 @@ from rich.table import Table
 console = Console()
 
 TEMPLATE_DIR = Path(__file__).parent / "templates"
+
+CORE_SKILLS = [
+    "software_lifecycle",
+    "prompt_engineering",
+    "how_to_research",
+    "how_to_create_skills",
+    "how_to_create_implementation_plan",
+    "code_review",
+    "debugging",
+    "git_workflow",
+    "software_architecture",
+    "ui_ux_design",
+]
+
+def load_catalog():
+    """Loads the skill catalog JSON if available."""
+    catalog_path = TEMPLATE_DIR / ".agents" / "skill_catalog.json"
+    
+    if catalog_path.exists():
+        try:
+            with open(catalog_path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return None
+    return None
 
 def validate_skill(skill_path):
     """Validates a skill directory structure and metadata."""
@@ -102,7 +129,10 @@ def main():
 @main.command()
 @click.option("--minimal", is_flag=True, help="Create minimal structure without optional skills")
 @click.option("--agents-md-only", is_flag=True, help="Only create AGENTS.md")
-def init(minimal, agents_md_only):
+@click.option("--all", "all_skills", is_flag=True, help="Install ALL available skills (warning: large)")
+@click.option("--category", help="Install all skills from a specific category (e.g., 'data-ai')")
+@click.option("--tag", help="Install all skills with a specific tag (e.g., 'python')")
+def init(minimal, agents_md_only, all_skills, category, tag):
     """Initialize .agents and AGENTS.md structure"""
     cwd = Path.cwd()
     
@@ -154,38 +184,111 @@ def init(minimal, agents_md_only):
         
         # 3. Handle skills (unless minimal)
         if not minimal:
-            src_skills = template_agents_dir / "skills"
+            src_skills_zip = template_agents_dir / "skills.zip"
             dest_skills_dir = agents_dir / "skills"
-            dest_skills_dir.mkdir(exist_ok=True)
             
-            if src_skills.exists():
-                for skill_folder in src_skills.iterdir():
-                    if skill_folder.is_dir():
-                        dest_skill = dest_skills_dir / skill_folder.name
-                        if not dest_skill.exists():
-                            shutil.copytree(skill_folder, dest_skill)
-                            console.print(f"[blue][INFO][/blue] Added skill: {skill_folder.name}")
+            if src_skills_zip.exists():
+                catalog = load_catalog()
+                catalog_skills = catalog.get("skills", {}) if catalog else {}
+                
+                with zipfile.ZipFile(src_skills_zip, 'r') as z:
+                    files_to_extract = []
+                    extracted_skills = set()
+                    
+                    for file_path in z.namelist():
+                        parts = file_path.split("/")
+                        # Expecting: skills/skill_name/...
+                        if len(parts) > 2 and parts[0] == "skills":
+                            skill_name = parts[1]
+                            
+                            should_include = False
+                            
+                            # 1. Core Set (Default)
+                            if not all_skills and not category and not tag:
+                                should_include = skill_name in CORE_SKILLS
+                            # 2. --all flag
+                            elif all_skills:
+                                should_include = True
+                            # 3. --category flag
+                            elif category:
+                                skill_data = catalog_skills.get(skill_name)
+                                if skill_data and skill_data.get("category") == category:
+                                    should_include = True
+                            # 4. --tag flag
+                            elif tag:
+                                skill_data = catalog_skills.get(skill_name)
+                                if skill_data and tag.lower() in skill_data.get("tags", []):
+                                    should_include = True
+
+                            if should_include:
+                                files_to_extract.append(file_path)
+                                extracted_skills.add(skill_name)
+                    
+                    if files_to_extract:
+                        z.extractall(agents_dir, members=files_to_extract)
+                        for s in sorted(extracted_skills):
+                             console.print(f"[blue][INFO][/blue] Added skill: {s}")
     
     console.print("\n[bold green]Successfully initialized .agents structure![/bold green]")
 
 @main.command(name="list")
-def list_skills():
-    """List all available portable skills"""
+@click.option("--category", help="Filter by category")
+@click.option("--tag", help="Filter by tag")
+@click.option("--list-categories", is_flag=True, help="Show all available categories")
+def list_skills(category, tag, list_categories):
+    """List available portable skills (optional specific filters)"""
+    
+    catalog = load_catalog()
+    
+    if list_categories:
+        if catalog:
+            console.print("[bold cyan]Available Categories:[/bold cyan]")
+            for cat in catalog.get("categories", []):
+                console.print(f"- {cat}")
+            console.print("\n[bold cyan]Top Tags (Try --tag <name>):[/bold cyan]")
+            # Just show a few common ones as hints
+            common_tags = ["python", "react", "security", "seo", "agent", "aws"]
+            for t in common_tags:
+                console.print(f"- {t}")
+        else:
+            console.print("[red]Catalog not found. Cannot list categories.[/red]")
+        return
+
     skills_dir = TEMPLATE_DIR / ".agents" / "skills"
     if not skills_dir.exists():
         console.print("[red]Error: Templates not found.[/red]")
         return
         
-    table = Table(title="Available Skills")
+    title = "Available Skills"
+    if category: title += f" (Category: {category})"
+    if tag: title += f" (Tag: {tag})"
+    
+    table = Table(title=title)
     table.add_column("Skill", style="cyan")
     table.add_column("Description", style="white")
     
     for skill_folder in sorted(skills_dir.iterdir()):
         if skill_folder.is_dir():
             skill_md = skill_folder / "SKILL.md"
+            
+            # Filter logic for list
+            if category or tag:
+                if not catalog:
+                    # If no catalog, can't filter effectively by metadata w/o reading every file
+                    pass 
+                else:
+                    skill_data = catalog["skills"].get(skill_folder.name)
+                    if not skill_data:
+                        continue
+                    
+                    if category and skill_data.get("category") != category:
+                        continue
+                    if tag and tag.lower() not in skill_data.get("tags", []):
+                        continue
+
             description = "No description found"
             if skill_md.exists():
-                with open(skill_md, "r") as f:
+                with open(skill_md, "r", encoding="utf-8") as f:
                     content = f.read()
                     if "description:" in content:
                         for line in content.split("\n"):

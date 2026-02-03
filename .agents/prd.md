@@ -43,3 +43,12 @@ As the skills library Grows, projects will need a way to keep their local skills
 
 ## 10. Revision History
 - [2026-01-20] Proposed Versioning & Update module.
+
+## 11. Skill Expansion (v0.2.0)
+- **Library Growth:** Integrated **615+ external skills** covering diverse domains (Security, DevOps, Mobile, SaaS, etc.).
+- **Normalization:** Converted all skills to `snake_case` directory structure and enforced SemVer metadata.
+- **Key Additions:**
+    - `ui_ux_design`: Advanced design system generation.
+    - `software_architecture`: Quality-focused architectural patterns.
+    - `prompt_engineering`: V0.2.0 with advanced techniques.
+    - `security_audit`, `fastapi_best_practices`, `react_best_practices`, and hundreds more.

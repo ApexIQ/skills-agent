@@ -1,0 +1,5176 @@
+{
+  "metadata": {
+    "total_skills": 625,
+    "total_categories": 9,
+    "total_tags": 702
+  },
+  "categories": [
+    "architecture",
+    "business",
+    "data-ai",
+    "development",
+    "general",
+    "infrastructure",
+    "security",
+    "testing",
+    "workflow"
+  ],
+  "tags": [
+    "101",
+    "3d",
+    "a",
+    "ab",
+    "accessibility",
+    "actions",
+    "active",
+    "address",
+    "admin",
+    "ads",
+    "advanced",
+    "advisor",
+    "agent",
+    "agents",
+    "ai",
+    "airflow",
+    "alembic",
+    "algolia",
+    "algorithmic",
+    "ally",
+    "alternatives",
+    "analyst",
+    "analytics",
+    "and",
+    "angular",
+    "animation",
+    "anthropic",
+    "anti",
+    "api",
+    "app",
+    "application",
+    "apps",
+    "ar",
+    "architecture",
+    "arm",
+    "art",
+    "article",
+    "artifacts",
+    "async",
+    "attack",
+    "attacks",
+    "audio",
+    "audit",
+    "auditor",
+    "auth",
+    "authentication",
+    "authority",
+    "auto",
+    "automate",
+    "automator",
+    "autonomous",
+    "avalonia",
+    "aws",
+    "azure",
+    "backend",
+    "backtesting",
+    "bash",
+    "bats",
+    "bazel",
+    "beautiful",
+    "before",
+    "behavioral",
+    "best",
+    "billing",
+    "binary",
+    "blockchain",
+    "blockrun",
+    "bluebook",
+    "bot",
+    "bounty",
+    "brainstorming",
+    "branch",
+    "brand",
+    "broken",
+    "browser",
+    "bug",
+    "bugs",
+    "build",
+    "builder",
+    "builder/templates",
+    "bukkit",
+    "bullmq",
+    "bun",
+    "burp",
+    "business",
+    "busybox",
+    "c",
+    "c4",
+    "caching",
+    "calculation",
+    "call",
+    "cannibalization",
+    "canvas",
+    "case",
+    "cc",
+    "cdc",
+    "cdp",
+    "changelog",
+    "chart",
+    "check",
+    "checklist",
+    "ci",
+    "cicd",
+    "claimable",
+    "clarity",
+    "claude",
+    "clean",
+    "cleanup",
+    "clerk",
+    "cli",
+    "clickhouse",
+    "clipper",
+    "cloud",
+    "coauthoring",
+    "code",
+    "codebase",
+    "coder",
+    "codex",
+    "coding",
+    "collaboration",
+    "commands",
+    "comments",
+    "commit",
+    "comms",
+    "communications",
+    "community",
+    "compact",
+    "competitive",
+    "competitor",
+    "completion",
+    "compliance",
+    "component",
+    "components",
+    "composition",
+    "comprehensive",
+    "compression",
+    "computer",
+    "concise",
+    "concurrency",
+    "conductor",
+    "config",
+    "configuration",
+    "construction",
+    "container",
+    "content",
+    "context7",
+    "continuous",
+    "contract",
+    "conversation",
+    "copy",
+    "copywriting",
+    "core",
+    "cortex",
+    "cost",
+    "cpp",
+    "cqrs",
+    "create",
+    "creator",
+    "crewai",
+    "cro",
+    "csharp",
+    "culture",
+    "customer",
+    "cycle",
+    "d3js",
+    "dag",
+    "daily",
+    "dashboard",
+    "dashboards",
+    "data",
+    "database",
+    "dbt",
+    "debezium",
+    "debt",
+    "debug",
+    "debugger",
+    "debugging",
+    "decision",
+    "deep",
+    "defensive",
+    "defi",
+    "degradation",
+    "dependencies",
+    "dependency",
+    "deploy",
+    "deployment",
+    "deps",
+    "designer",
+    "detective",
+    "detector",
+    "dev",
+    "development/2d",
+    "development/3d",
+    "development/game",
+    "development/mobile",
+    "development/multiplayer",
+    "development/pc",
+    "development/vr",
+    "development/web",
+    "devops",
+    "diagnostics",
+    "directory",
+    "discord",
+    "dispatching",
+    "distributed",
+    "django",
+    "doc",
+    "docker",
+    "docs",
+    "documentation",
+    "documenter",
+    "docx",
+    "dotnet",
+    "driven",
+    "dx",
+    "e2e",
+    "ecs",
+    "edges",
+    "edit",
+    "editing",
+    "elixir",
+    "email",
+    "embedding",
+    "employment",
+    "engine",
+    "engineering",
+    "enhance",
+    "environment",
+    "error",
+    "errors",
+    "escalation",
+    "ethical",
+    "evaluation",
+    "event",
+    "exa",
+    "example",
+    "excellence",
+    "executing",
+    "experience",
+    "explain",
+    "expo",
+    "extension",
+    "external",
+    "extraction",
+    "face",
+    "factory",
+    "fal",
+    "fastapi",
+    "ffuf",
+    "file",
+    "files",
+    "financial",
+    "find",
+    "finishing",
+    "fintech",
+    "firebase",
+    "firecrawl",
+    "firmware",
+    "fix",
+    "fixing",
+    "flow",
+    "flutter",
+    "flyway",
+    "forensics",
+    "form",
+    "fp",
+    "framework",
+    "frameworks",
+    "free",
+    "frontend",
+    "full",
+    "fullstack",
+    "functions",
+    "fundamentals",
+    "fuzzing",
+    "game",
+    "games",
+    "gate",
+    "gcp",
+    "gdpr",
+    "gdscript",
+    "generate",
+    "generation",
+    "generator",
+    "geo",
+    "gif",
+    "git",
+    "github",
+    "gitlab",
+    "gitops",
+    "go",
+    "godot",
+    "golang",
+    "grafana",
+    "graphql",
+    "gratitude",
+    "green",
+    "guidelines",
+    "hacking",
+    "handling",
+    "handoff",
+    "hardening",
+    "haskell",
+    "health",
+    "helm",
+    "hr",
+    "html",
+    "hubspot",
+    "hugging",
+    "hunter",
+    "hybrid",
+    "i18n",
+    "ideas",
+    "idor",
+    "image",
+    "imagen",
+    "implement",
+    "improve",
+    "incident",
+    "index",
+    "infinite",
+    "injection",
+    "inngest",
+    "integration",
+    "interactive",
+    "internal",
+    "io",
+    "ios",
+    "issue",
+    "istio",
+    "iterate",
+    "java",
+    "javascript",
+    "jobs",
+    "julia",
+    "k8s",
+    "kafka",
+    "kaizen",
+    "keyword",
+    "kpi",
+    "kubernetes",
+    "lab",
+    "landscape",
+    "langchain",
+    "langfuse",
+    "langgraph",
+    "last30days",
+    "launch",
+    "launcher",
+    "layout",
+    "learning",
+    "legacy",
+    "legal",
+    "library",
+    "linear",
+    "linkerd",
+    "lint",
+    "linux",
+    "liquibase",
+    "llm",
+    "localization",
+    "loki",
+    "machine",
+    "make",
+    "makepad",
+    "malware",
+    "manage",
+    "manager",
+    "manifest",
+    "mapping",
+    "market",
+    "marketer",
+    "marketing",
+    "markup",
+    "mastery",
+    "max",
+    "mcp",
+    "md",
+    "memory",
+    "mermaid",
+    "mesh",
+    "meta",
+    "metasploit",
+    "methodology",
+    "methods",
+    "metrics",
+    "micro",
+    "microservices",
+    "migrate",
+    "migration",
+    "migrations",
+    "minecraft",
+    "mini",
+    "mitigation",
+    "ml",
+    "mlops",
+    "mobile",
+    "mock",
+    "mode",
+    "modeling",
+    "modern",
+    "modernization",
+    "modernize",
+    "modernizer",
+    "modes",
+    "module",
+    "monitor",
+    "monitoring",
+    "monorepo",
+    "moodle",
+    "mtls",
+    "multi",
+    "mysql",
+    "n8n",
+    "nanobanana",
+    "native",
+    "neon",
+    "nestjs",
+    "network",
+    "networking",
+    "new",
+    "news",
+    "nextjs",
+    "nft",
+    "node",
+    "nodejs",
+    "nosql",
+    "notebooklm",
+    "notes",
+    "notion",
+    "nx",
+    "observability",
+    "observe",
+    "obsidian",
+    "official",
+    "on",
+    "onboard",
+    "onboarding",
+    "openapi",
+    "opportunity",
+    "ops",
+    "optimization",
+    "optimize",
+    "optimizer",
+    "orchestrator",
+    "organizer",
+    "package",
+    "packaging",
+    "page",
+    "paid",
+    "parallel",
+    "path",
+    "payment",
+    "paypal",
+    "paywall",
+    "pci",
+    "pdf",
+    "penetration",
+    "pentest",
+    "pentesting",
+    "performance",
+    "personal",
+    "php",
+    "pipeline",
+    "plaid",
+    "plan",
+    "planner",
+    "planning",
+    "plans",
+    "platform",
+    "playwright",
+    "policies",
+    "popup",
+    "portfolio",
+    "posix",
+    "postgres",
+    "postgresql",
+    "postmortem",
+    "powershell",
+    "ppt",
+    "pptx",
+    "pr",
+    "practices",
+    "pragmatic",
+    "pricing",
+    "principles",
+    "prisma",
+    "privilege",
+    "procedures",
+    "product",
+    "production",
+    "profiling",
+    "program",
+    "programmatic",
+    "programming",
+    "projection",
+    "projections",
+    "prometheus",
+    "prompt",
+    "prose",
+    "protocol",
+    "psychology",
+    "publisher",
+    "pushing",
+    "pypict",
+    "python",
+    "qstash",
+    "quality",
+    "quant",
+    "radix",
+    "rag",
+    "rails",
+    "react",
+    "reader",
+    "readme",
+    "receiving",
+    "reconnaissance",
+    "records",
+    "red",
+    "refactor",
+    "refactoring",
+    "reference",
+    "referral",
+    "refresher",
+    "remotion",
+    "report",
+    "requesting",
+    "requirement",
+    "research",
+    "responder",
+    "response",
+    "restore",
+    "reverse",
+    "reversing",
+    "revert",
+    "risk",
+    "router",
+    "ruby",
+    "run",
+    "runbook",
+    "rust",
+    "saas",
+    "safety",
+    "saga",
+    "sales",
+    "salesforce",
+    "sast",
+    "save",
+    "scala",
+    "scan",
+    "scanner",
+    "scanning",
+    "schema",
+    "scientific",
+    "scientist",
+    "scraper",
+    "screen",
+    "screenshots",
+    "scripting",
+    "scroll",
+    "search",
+    "secrets",
+    "security",
+    "seekers",
+    "segment",
+    "senior",
+    "seo",
+    "sequence",
+    "server",
+    "serverless",
+    "service",
+    "setup",
+    "sharp",
+    "shell",
+    "shellcheck",
+    "shodan",
+    "shopify",
+    "signup",
+    "similarity",
+    "sizing",
+    "skill",
+    "skills",
+    "slack",
+    "slides",
+    "slo",
+    "smtp",
+    "snippet",
+    "social",
+    "software",
+    "solidity",
+    "sourcing",
+    "spark",
+    "spec",
+    "speckit",
+    "speed",
+    "sql",
+    "sqlmap",
+    "ssh",
+    "stack",
+    "standards",
+    "standup",
+    "startup",
+    "state",
+    "status",
+    "stitch",
+    "store",
+    "storytelling",
+    "strategic",
+    "strategies",
+    "strategist",
+    "stride",
+    "stripe",
+    "structure",
+    "subagent",
+    "suite",
+    "supabase",
+    "superpowers",
+    "support",
+    "swiftui",
+    "systematic",
+    "tactics",
+    "tailwind",
+    "tavily",
+    "tdd",
+    "team",
+    "tech",
+    "techniques",
+    "telegram",
+    "temporal",
+    "terraform",
+    "theme",
+    "threat",
+    "threejs",
+    "top",
+    "trace",
+    "tracing",
+    "track",
+    "tracking",
+    "traffic",
+    "transformation",
+    "traversal",
+    "tree",
+    "trigger",
+    "troubleshooter",
+    "ts",
+    "tuning",
+    "turborepo",
+    "tutorial",
+    "twilio",
+    "types",
+    "typescript",
+    "ui",
+    "unit",
+    "unity",
+    "unreal",
+    "update",
+    "upgrade",
+    "upgrading",
+    "uploads",
+    "upscale",
+    "upstash",
+    "use",
+    "using",
+    "uv",
+    "ux",
+    "validate",
+    "validation",
+    "validator",
+    "varlock",
+    "vector",
+    "vercel",
+    "verification",
+    "vexor",
+    "video",
+    "viewmodels",
+    "viral",
+    "visual",
+    "voice",
+    "vulnerabilities",
+    "vulnerability",
+    "wcag",
+    "web",
+    "web3",
+    "webapp",
+    "whatsapp",
+    "win11",
+    "window",
+    "windows",
+    "wireshark",
+    "with",
+    "wordpress",
+    "workspace",
+    "worktrees",
+    "wrapper",
+    "writer",
+    "writing",
+    "x",
+    "xlsx",
+    "xss",
+    "zafiro",
+    "zapier",
+    "zero-downtime"
+  ],
+  "skills": {
+    "architect_review": {
+      "category": "architecture",
+      "tags": []
+    },
+    "architecture": {
+      "category": "architecture",
+      "tags": [
+        "architecture"
+      ]
+    },
+    "architecture_decision_records": {
+      "category": "architecture",
+      "tags": [
+        "architecture",
+        "decision",
+        "records"
+      ]
+    },
+    "automate_whatsapp": {
+      "category": "architecture",
+      "tags": [
+        "automate",
+        "whatsapp"
+      ]
+    },
+    "avalonia_viewmodels_zafiro": {
+      "category": "architecture",
+      "tags": [
+        "avalonia",
+        "viewmodels",
+        "zafiro"
+      ]
+    },
+    "bash_linux": {
+      "category": "architecture",
+      "tags": [
+        "bash",
+        "linux"
+      ]
+    },
+    "binary_analysis_patterns": {
+      "category": "architecture",
+      "tags": [
+        "binary"
+      ]
+    },
+    "brainstorming": {
+      "category": "architecture",
+      "tags": [
+        "brainstorming"
+      ]
+    },
+    "browser_extension_builder": {
+      "category": "architecture",
+      "tags": [
+        "browser",
+        "extension",
+        "builder"
+      ]
+    },
+    "c4_architecture_c4_architecture": {
+      "category": "architecture",
+      "tags": [
+        "c4",
+        "architecture"
+      ]
+    },
+    "c4_code": {
+      "category": "architecture",
+      "tags": [
+        "c4",
+        "code"
+      ]
+    },
+    "c4_component": {
+      "category": "architecture",
+      "tags": [
+        "c4",
+        "component"
+      ]
+    },
+    "c4_context": {
+      "category": "architecture",
+      "tags": [
+        "c4"
+      ]
+    },
+    "code_refactoring_refactor_clean": {
+      "category": "architecture",
+      "tags": [
+        "code",
+        "refactoring",
+        "refactor",
+        "clean"
+      ]
+    },
+    "codebase_cleanup_refactor_clean": {
+      "category": "architecture",
+      "tags": [
+        "codebase",
+        "cleanup",
+        "refactor",
+        "clean"
+      ]
+    },
+    "competitor_alternatives": {
+      "category": "architecture",
+      "tags": [
+        "competitor",
+        "alternatives"
+      ]
+    },
+    "context_degradation": {
+      "category": "architecture",
+      "tags": [
+        "degradation"
+      ]
+    },
+    "core_components": {
+      "category": "architecture",
+      "tags": [
+        "core",
+        "components"
+      ]
+    },
+    "cpp_pro": {
+      "category": "architecture",
+      "tags": [
+        "cpp"
+      ]
+    },
+    "cqrs_implementation": {
+      "category": "architecture",
+      "tags": [
+        "cqrs"
+      ]
+    },
+    "doc_coauthoring": {
+      "category": "architecture",
+      "tags": [
+        "doc",
+        "coauthoring"
+      ]
+    },
+    "docs_architect": {
+      "category": "architecture",
+      "tags": [
+        "docs"
+      ]
+    },
+    "elixir_pro": {
+      "category": "architecture",
+      "tags": [
+        "elixir"
+      ]
+    },
+    "email_systems": {
+      "category": "architecture",
+      "tags": [
+        "email"
+      ]
+    },
+    "error_detective": {
+      "category": "architecture",
+      "tags": [
+        "error",
+        "detective"
+      ]
+    },
+    "error_handling_patterns": {
+      "category": "architecture",
+      "tags": [
+        "error",
+        "handling"
+      ]
+    },
+    "event_sourcing_architect": {
+      "category": "architecture",
+      "tags": [
+        "event",
+        "sourcing"
+      ]
+    },
+    "event_store_design": {
+      "category": "architecture",
+      "tags": [
+        "event",
+        "store"
+      ]
+    },
+    "game_development/multiplayer": {
+      "category": "architecture",
+      "tags": [
+        "game",
+        "development/multiplayer"
+      ]
+    },
+    "godot_gdscript_patterns": {
+      "category": "architecture",
+      "tags": [
+        "godot",
+        "gdscript"
+      ]
+    },
+    "haskell_pro": {
+      "category": "architecture",
+      "tags": [
+        "haskell"
+      ]
+    },
+    "i18n_localization": {
+      "category": "architecture",
+      "tags": [
+        "i18n",
+        "localization"
+      ]
+    },
+    "inngest": {
+      "category": "architecture",
+      "tags": [
+        "inngest"
+      ]
+    },
+    "julia_pro": {
+      "category": "architecture",
+      "tags": [
+        "julia"
+      ]
+    },
+    "minecraft_bukkit_pro": {
+      "category": "architecture",
+      "tags": [
+        "minecraft",
+        "bukkit"
+      ]
+    },
+    "monorepo_architect": {
+      "category": "architecture",
+      "tags": [
+        "monorepo"
+      ]
+    },
+    "multi_agent_patterns": {
+      "category": "architecture",
+      "tags": [
+        "multi",
+        "agent"
+      ]
+    },
+    "n8n_mcp_tools_expert": {
+      "category": "architecture",
+      "tags": [
+        "n8n",
+        "mcp"
+      ]
+    },
+    "nestjs_expert": {
+      "category": "architecture",
+      "tags": [
+        "nestjs"
+      ]
+    },
+    "nx_workspace_patterns": {
+      "category": "architecture",
+      "tags": [
+        "nx",
+        "workspace"
+      ]
+    },
+    "on_call_handoff_patterns": {
+      "category": "architecture",
+      "tags": [
+        "on",
+        "call",
+        "handoff"
+      ]
+    },
+    "parallel_agents": {
+      "category": "architecture",
+      "tags": [
+        "parallel",
+        "agents"
+      ]
+    },
+    "powershell_windows": {
+      "category": "architecture",
+      "tags": [
+        "powershell",
+        "windows"
+      ]
+    },
+    "production_code_audit": {
+      "category": "architecture",
+      "tags": [
+        "production",
+        "code",
+        "audit"
+      ]
+    },
+    "projection_patterns": {
+      "category": "architecture",
+      "tags": [
+        "projection"
+      ]
+    },
+    "prompt_engineering": {
+      "category": "architecture",
+      "tags": [
+        "prompt",
+        "engineering"
+      ]
+    },
+    "radix_ui_design_system": {
+      "category": "architecture",
+      "tags": [
+        "radix",
+        "ui"
+      ]
+    },
+    "saga_orchestration": {
+      "category": "architecture",
+      "tags": [
+        "saga"
+      ]
+    },
+    "salesforce_development": {
+      "category": "architecture",
+      "tags": [
+        "salesforce"
+      ]
+    },
+    "skill_developer": {
+      "category": "architecture",
+      "tags": [
+        "skill"
+      ]
+    },
+    "software_architecture": {
+      "category": "architecture",
+      "tags": [
+        "software",
+        "architecture"
+      ]
+    },
+    "tailwind_design_system": {
+      "category": "architecture",
+      "tags": [
+        "tailwind"
+      ]
+    },
+    "tailwind_patterns": {
+      "category": "architecture",
+      "tags": [
+        "tailwind"
+      ]
+    },
+    "testing_patterns": {
+      "category": "architecture",
+      "tags": []
+    },
+    "tool_design": {
+      "category": "architecture",
+      "tags": []
+    },
+    "unreal_engine_cpp_pro": {
+      "category": "architecture",
+      "tags": [
+        "unreal",
+        "engine",
+        "cpp"
+      ]
+    },
+    "wcag_audit_patterns": {
+      "category": "architecture",
+      "tags": [
+        "wcag",
+        "audit"
+      ]
+    },
+    "workflow_orchestration_patterns": {
+      "category": "architecture",
+      "tags": []
+    },
+    "workflow_patterns": {
+      "category": "architecture",
+      "tags": []
+    },
+    "zapier_make_patterns": {
+      "category": "architecture",
+      "tags": [
+        "zapier",
+        "make"
+      ]
+    },
+    "competitive_landscape": {
+      "category": "business",
+      "tags": [
+        "competitive",
+        "landscape"
+      ]
+    },
+    "conductor_setup": {
+      "category": "business",
+      "tags": [
+        "conductor",
+        "setup"
+      ]
+    },
+    "content_creator": {
+      "category": "business",
+      "tags": [
+        "content",
+        "creator"
+      ]
+    },
+    "context_driven_development": {
+      "category": "business",
+      "tags": [
+        "driven"
+      ]
+    },
+    "copy_editing": {
+      "category": "business",
+      "tags": [
+        "copy",
+        "editing"
+      ]
+    },
+    "copywriting": {
+      "category": "business",
+      "tags": [
+        "copywriting"
+      ]
+    },
+    "deep_research": {
+      "category": "business",
+      "tags": [
+        "deep",
+        "research"
+      ]
+    },
+    "defi_protocol_templates": {
+      "category": "business",
+      "tags": [
+        "defi",
+        "protocol"
+      ]
+    },
+    "employment_contract_templates": {
+      "category": "business",
+      "tags": [
+        "employment",
+        "contract"
+      ]
+    },
+    "framework_migration_legacy_modernize": {
+      "category": "business",
+      "tags": [
+        "framework",
+        "migration",
+        "legacy",
+        "modernize"
+      ]
+    },
+    "free_tool_strategy": {
+      "category": "business",
+      "tags": [
+        "free"
+      ]
+    },
+    "hr_pro": {
+      "category": "business",
+      "tags": [
+        "hr"
+      ]
+    },
+    "market_sizing_analysis": {
+      "category": "business",
+      "tags": [
+        "market",
+        "sizing"
+      ]
+    },
+    "marketing_ideas": {
+      "category": "business",
+      "tags": [
+        "marketing",
+        "ideas"
+      ]
+    },
+    "marketing_psychology": {
+      "category": "business",
+      "tags": [
+        "marketing",
+        "psychology"
+      ]
+    },
+    "notion_template_business": {
+      "category": "business",
+      "tags": [
+        "notion",
+        "business"
+      ]
+    },
+    "page_cro": {
+      "category": "business",
+      "tags": [
+        "page",
+        "cro"
+      ]
+    },
+    "paywall_upgrade_cro": {
+      "category": "business",
+      "tags": [
+        "paywall",
+        "upgrade",
+        "cro"
+      ]
+    },
+    "pricing_strategy": {
+      "category": "business",
+      "tags": [
+        "pricing"
+      ]
+    },
+    "sales_automator": {
+      "category": "business",
+      "tags": [
+        "sales",
+        "automator"
+      ]
+    },
+    "screenshots": {
+      "category": "business",
+      "tags": [
+        "screenshots"
+      ]
+    },
+    "scroll_experience": {
+      "category": "business",
+      "tags": [
+        "scroll",
+        "experience"
+      ]
+    },
+    "seo_cannibalization_detector": {
+      "category": "business",
+      "tags": [
+        "seo",
+        "cannibalization",
+        "detector"
+      ]
+    },
+    "seo_content_auditor": {
+      "category": "business",
+      "tags": [
+        "seo",
+        "content",
+        "auditor"
+      ]
+    },
+    "seo_content_planner": {
+      "category": "business",
+      "tags": [
+        "seo",
+        "content",
+        "planner"
+      ]
+    },
+    "seo_content_refresher": {
+      "category": "business",
+      "tags": [
+        "seo",
+        "content",
+        "refresher"
+      ]
+    },
+    "seo_content_writer": {
+      "category": "business",
+      "tags": [
+        "seo",
+        "content",
+        "writer"
+      ]
+    },
+    "seo_fundamentals": {
+      "category": "business",
+      "tags": [
+        "seo",
+        "fundamentals"
+      ]
+    },
+    "seo_keyword_strategist": {
+      "category": "business",
+      "tags": [
+        "seo",
+        "keyword",
+        "strategist"
+      ]
+    },
+    "seo_meta_optimizer": {
+      "category": "business",
+      "tags": [
+        "seo",
+        "meta",
+        "optimizer"
+      ]
+    },
+    "seo_snippet_hunter": {
+      "category": "business",
+      "tags": [
+        "seo",
+        "snippet",
+        "hunter"
+      ]
+    },
+    "seo_structure_architect": {
+      "category": "business",
+      "tags": [
+        "seo",
+        "structure"
+      ]
+    },
+    "startup_business_analyst_business_case": {
+      "category": "business",
+      "tags": [
+        "startup",
+        "business",
+        "analyst",
+        "case"
+      ]
+    },
+    "startup_business_analyst_financial_projections": {
+      "category": "business",
+      "tags": [
+        "startup",
+        "business",
+        "analyst",
+        "financial",
+        "projections"
+      ]
+    },
+    "startup_business_analyst_market_opportunity": {
+      "category": "business",
+      "tags": [
+        "startup",
+        "business",
+        "analyst",
+        "market",
+        "opportunity"
+      ]
+    },
+    "startup_financial_modeling": {
+      "category": "business",
+      "tags": [
+        "startup",
+        "financial",
+        "modeling"
+      ]
+    },
+    "team_composition_analysis": {
+      "category": "business",
+      "tags": [
+        "team",
+        "composition"
+      ]
+    },
+    "agent_memory_mcp": {
+      "category": "data-ai",
+      "tags": [
+        "agent",
+        "memory",
+        "mcp"
+      ]
+    },
+    "agent_tool_builder": {
+      "category": "data-ai",
+      "tags": [
+        "agent",
+        "builder"
+      ]
+    },
+    "ai_agents_architect": {
+      "category": "data-ai",
+      "tags": [
+        "ai",
+        "agents"
+      ]
+    },
+    "ai_engineer": {
+      "category": "data-ai",
+      "tags": [
+        "ai"
+      ]
+    },
+    "ai_wrapper_product": {
+      "category": "data-ai",
+      "tags": [
+        "ai",
+        "wrapper",
+        "product"
+      ]
+    },
+    "analytics_tracking": {
+      "category": "data-ai",
+      "tags": [
+        "analytics",
+        "tracking"
+      ]
+    },
+    "api_documenter": {
+      "category": "data-ai",
+      "tags": [
+        "api",
+        "documenter"
+      ]
+    },
+    "autonomous_agent_patterns": {
+      "category": "data-ai",
+      "tags": [
+        "autonomous",
+        "agent"
+      ]
+    },
+    "autonomous_agents": {
+      "category": "data-ai",
+      "tags": [
+        "autonomous",
+        "agents"
+      ]
+    },
+    "beautiful_prose": {
+      "category": "data-ai",
+      "tags": [
+        "beautiful",
+        "prose"
+      ]
+    },
+    "behavioral_modes": {
+      "category": "data-ai",
+      "tags": [
+        "behavioral",
+        "modes"
+      ]
+    },
+    "blockrun": {
+      "category": "data-ai",
+      "tags": [
+        "blockrun"
+      ]
+    },
+    "browser_automation": {
+      "category": "data-ai",
+      "tags": [
+        "browser"
+      ]
+    },
+    "business_analyst": {
+      "category": "data-ai",
+      "tags": [
+        "business",
+        "analyst"
+      ]
+    },
+    "cc_skill_backend_patterns": {
+      "category": "data-ai",
+      "tags": [
+        "cc",
+        "skill",
+        "backend"
+      ]
+    },
+    "cc_skill_clickhouse_io": {
+      "category": "data-ai",
+      "tags": [
+        "cc",
+        "skill",
+        "clickhouse",
+        "io"
+      ]
+    },
+    "clarity_gate": {
+      "category": "data-ai",
+      "tags": [
+        "clarity",
+        "gate"
+      ]
+    },
+    "code_documentation_doc_generate": {
+      "category": "data-ai",
+      "tags": [
+        "code",
+        "documentation",
+        "doc",
+        "generate"
+      ]
+    },
+    "codex_review": {
+      "category": "data-ai",
+      "tags": [
+        "codex"
+      ]
+    },
+    "content_marketer": {
+      "category": "data-ai",
+      "tags": [
+        "content",
+        "marketer"
+      ]
+    },
+    "context_manager": {
+      "category": "data-ai",
+      "tags": [
+        "manager"
+      ]
+    },
+    "context_window_management": {
+      "category": "data-ai",
+      "tags": [
+        "window"
+      ]
+    },
+    "conversation_memory": {
+      "category": "data-ai",
+      "tags": [
+        "conversation",
+        "memory"
+      ]
+    },
+    "crewai": {
+      "category": "data-ai",
+      "tags": [
+        "crewai"
+      ]
+    },
+    "customer_support": {
+      "category": "data-ai",
+      "tags": [
+        "customer",
+        "support"
+      ]
+    },
+    "data_engineering_data_driven_feature": {
+      "category": "data-ai",
+      "tags": [
+        "data",
+        "engineering",
+        "driven"
+      ]
+    },
+    "data_quality_frameworks": {
+      "category": "data-ai",
+      "tags": [
+        "data",
+        "quality",
+        "frameworks"
+      ]
+    },
+    "data_scientist": {
+      "category": "data-ai",
+      "tags": [
+        "data",
+        "scientist"
+      ]
+    },
+    "data_storytelling": {
+      "category": "data-ai",
+      "tags": [
+        "data",
+        "storytelling"
+      ]
+    },
+    "database_architect": {
+      "category": "data-ai",
+      "tags": [
+        "database"
+      ]
+    },
+    "database_design": {
+      "category": "data-ai",
+      "tags": [
+        "database"
+      ]
+    },
+    "dbt_transformation_patterns": {
+      "category": "data-ai",
+      "tags": [
+        "dbt",
+        "transformation"
+      ]
+    },
+    "documentation_generation_doc_generate": {
+      "category": "data-ai",
+      "tags": [
+        "documentation",
+        "generation",
+        "doc",
+        "generate"
+      ]
+    },
+    "documentation_templates": {
+      "category": "data-ai",
+      "tags": [
+        "documentation"
+      ]
+    },
+    "embedding_strategies": {
+      "category": "data-ai",
+      "tags": [
+        "embedding",
+        "strategies"
+      ]
+    },
+    "fal_audio": {
+      "category": "data-ai",
+      "tags": [
+        "fal",
+        "audio"
+      ]
+    },
+    "fal_generate": {
+      "category": "data-ai",
+      "tags": [
+        "fal",
+        "generate"
+      ]
+    },
+    "fal_image_edit": {
+      "category": "data-ai",
+      "tags": [
+        "fal",
+        "image",
+        "edit"
+      ]
+    },
+    "fal_upscale": {
+      "category": "data-ai",
+      "tags": [
+        "fal",
+        "upscale"
+      ]
+    },
+    "fal_workflow": {
+      "category": "data-ai",
+      "tags": [
+        "fal"
+      ]
+    },
+    "fp_ts_react": {
+      "category": "data-ai",
+      "tags": [
+        "fp",
+        "ts",
+        "react"
+      ]
+    },
+    "frontend_dev_guidelines": {
+      "category": "data-ai",
+      "tags": [
+        "frontend",
+        "dev",
+        "guidelines"
+      ]
+    },
+    "geo_fundamentals": {
+      "category": "data-ai",
+      "tags": [
+        "geo",
+        "fundamentals"
+      ]
+    },
+    "graphql": {
+      "category": "data-ai",
+      "tags": [
+        "graphql"
+      ]
+    },
+    "hybrid_search_implementation": {
+      "category": "data-ai",
+      "tags": [
+        "hybrid",
+        "search"
+      ]
+    },
+    "ios_developer": {
+      "category": "data-ai",
+      "tags": [
+        "ios"
+      ]
+    },
+    "langchain_architecture": {
+      "category": "data-ai",
+      "tags": [
+        "langchain",
+        "architecture"
+      ]
+    },
+    "langgraph": {
+      "category": "data-ai",
+      "tags": [
+        "langgraph"
+      ]
+    },
+    "llm_application_dev_ai_assistant": {
+      "category": "data-ai",
+      "tags": [
+        "llm",
+        "application",
+        "dev",
+        "ai"
+      ]
+    },
+    "llm_application_dev_langchain_agent": {
+      "category": "data-ai",
+      "tags": [
+        "llm",
+        "application",
+        "dev",
+        "langchain",
+        "agent"
+      ]
+    },
+    "llm_application_dev_prompt_optimize": {
+      "category": "data-ai",
+      "tags": [
+        "llm",
+        "application",
+        "dev",
+        "prompt",
+        "optimize"
+      ]
+    },
+    "llm_evaluation": {
+      "category": "data-ai",
+      "tags": [
+        "llm",
+        "evaluation"
+      ]
+    },
+    "nanobanana_ppt_skills": {
+      "category": "data-ai",
+      "tags": [
+        "nanobanana",
+        "ppt",
+        "skills"
+      ]
+    },
+    "neon_postgres": {
+      "category": "data-ai",
+      "tags": [
+        "neon",
+        "postgres"
+      ]
+    },
+    "nextjs_app_router_patterns": {
+      "category": "data-ai",
+      "tags": [
+        "nextjs",
+        "app",
+        "router"
+      ]
+    },
+    "nextjs_best_practices": {
+      "category": "data-ai",
+      "tags": [
+        "nextjs",
+        "best",
+        "practices"
+      ]
+    },
+    "nodejs_backend_patterns": {
+      "category": "data-ai",
+      "tags": [
+        "nodejs",
+        "backend"
+      ]
+    },
+    "php_pro": {
+      "category": "data-ai",
+      "tags": [
+        "php"
+      ]
+    },
+    "postgres_best_practices": {
+      "category": "data-ai",
+      "tags": [
+        "postgres",
+        "best",
+        "practices"
+      ]
+    },
+    "postgresql": {
+      "category": "data-ai",
+      "tags": [
+        "postgresql"
+      ]
+    },
+    "prisma_expert": {
+      "category": "data-ai",
+      "tags": [
+        "prisma"
+      ]
+    },
+    "programmatic_seo": {
+      "category": "data-ai",
+      "tags": [
+        "programmatic",
+        "seo"
+      ]
+    },
+    "prompt_caching": {
+      "category": "data-ai",
+      "tags": [
+        "prompt",
+        "caching"
+      ]
+    },
+    "prompt_engineer": {
+      "category": "data-ai",
+      "tags": [
+        "prompt"
+      ]
+    },
+    "prompt_engineering_patterns": {
+      "category": "data-ai",
+      "tags": [
+        "prompt",
+        "engineering"
+      ]
+    },
+    "rag_engineer": {
+      "category": "data-ai",
+      "tags": [
+        "rag"
+      ]
+    },
+    "rag_implementation": {
+      "category": "data-ai",
+      "tags": [
+        "rag"
+      ]
+    },
+    "react_best_practices": {
+      "category": "data-ai",
+      "tags": [
+        "react",
+        "best",
+        "practices"
+      ]
+    },
+    "react_ui_patterns": {
+      "category": "data-ai",
+      "tags": [
+        "react",
+        "ui"
+      ]
+    },
+    "scala_pro": {
+      "category": "data-ai",
+      "tags": [
+        "scala"
+      ]
+    },
+    "schema_markup": {
+      "category": "data-ai",
+      "tags": [
+        "schema",
+        "markup"
+      ]
+    },
+    "segment_cdp": {
+      "category": "data-ai",
+      "tags": [
+        "segment",
+        "cdp"
+      ]
+    },
+    "senior_architect": {
+      "category": "data-ai",
+      "tags": [
+        "senior"
+      ]
+    },
+    "seo_audit": {
+      "category": "data-ai",
+      "tags": [
+        "seo",
+        "audit"
+      ]
+    },
+    "similarity_search_patterns": {
+      "category": "data-ai",
+      "tags": [
+        "similarity",
+        "search"
+      ]
+    },
+    "skill_seekers": {
+      "category": "data-ai",
+      "tags": [
+        "skill",
+        "seekers"
+      ]
+    },
+    "spark_optimization": {
+      "category": "data-ai",
+      "tags": [
+        "spark",
+        "optimization"
+      ]
+    },
+    "sql_optimization_patterns": {
+      "category": "data-ai",
+      "tags": [
+        "sql",
+        "optimization"
+      ]
+    },
+    "sqlmap_database_pentesting": {
+      "category": "data-ai",
+      "tags": [
+        "sqlmap",
+        "database",
+        "pentesting"
+      ]
+    },
+    "stitch_ui_design": {
+      "category": "data-ai",
+      "tags": [
+        "stitch",
+        "ui"
+      ]
+    },
+    "tdd_orchestrator": {
+      "category": "data-ai",
+      "tags": [
+        "tdd",
+        "orchestrator"
+      ]
+    },
+    "team_collaboration_standup_notes": {
+      "category": "data-ai",
+      "tags": [
+        "team",
+        "collaboration",
+        "standup",
+        "notes"
+      ]
+    },
+    "telegram_bot_builder": {
+      "category": "data-ai",
+      "tags": [
+        "telegram",
+        "bot",
+        "builder"
+      ]
+    },
+    "trigger_dev": {
+      "category": "data-ai",
+      "tags": [
+        "trigger",
+        "dev"
+      ]
+    },
+    "unity_ecs_patterns": {
+      "category": "data-ai",
+      "tags": [
+        "unity",
+        "ecs"
+      ]
+    },
+    "vector_database_engineer": {
+      "category": "data-ai",
+      "tags": [
+        "vector",
+        "database"
+      ]
+    },
+    "vector_index_tuning": {
+      "category": "data-ai",
+      "tags": [
+        "vector",
+        "index",
+        "tuning"
+      ]
+    },
+    "vexor": {
+      "category": "data-ai",
+      "tags": [
+        "vexor"
+      ]
+    },
+    "voice_ai_development": {
+      "category": "data-ai",
+      "tags": [
+        "voice",
+        "ai"
+      ]
+    },
+    "voice_ai_engine_development": {
+      "category": "data-ai",
+      "tags": [
+        "voice",
+        "ai",
+        "engine"
+      ]
+    },
+    "web_artifacts_builder": {
+      "category": "data-ai",
+      "tags": [
+        "web",
+        "artifacts",
+        "builder"
+      ]
+    },
+    "xlsx_official": {
+      "category": "data-ai",
+      "tags": [
+        "xlsx",
+        "official"
+      ]
+    },
+    "3d_web_experience": {
+      "category": "development",
+      "tags": [
+        "3d",
+        "web",
+        "experience"
+      ]
+    },
+    "algolia_search": {
+      "category": "development",
+      "tags": [
+        "algolia",
+        "search"
+      ]
+    },
+    "api_design_principles": {
+      "category": "development",
+      "tags": [
+        "api",
+        "principles"
+      ]
+    },
+    "api_documentation_generator": {
+      "category": "development",
+      "tags": [
+        "api",
+        "documentation",
+        "generator"
+      ]
+    },
+    "api_patterns": {
+      "category": "development",
+      "tags": [
+        "api"
+      ]
+    },
+    "app_store_optimization": {
+      "category": "development",
+      "tags": [
+        "app",
+        "store",
+        "optimization"
+      ]
+    },
+    "architecture_patterns": {
+      "category": "development",
+      "tags": [
+        "architecture"
+      ]
+    },
+    "async_python_patterns": {
+      "category": "development",
+      "tags": [
+        "async",
+        "python"
+      ]
+    },
+    "azure_functions": {
+      "category": "development",
+      "tags": [
+        "azure",
+        "functions"
+      ]
+    },
+    "backend_dev_guidelines": {
+      "category": "development",
+      "tags": [
+        "backend",
+        "dev",
+        "guidelines"
+      ]
+    },
+    "bullmq_specialist": {
+      "category": "development",
+      "tags": [
+        "bullmq"
+      ]
+    },
+    "bun_development": {
+      "category": "development",
+      "tags": [
+        "bun"
+      ]
+    },
+    "cc_skill_coding_standards": {
+      "category": "development",
+      "tags": [
+        "cc",
+        "skill",
+        "coding",
+        "standards"
+      ]
+    },
+    "cc_skill_frontend_patterns": {
+      "category": "development",
+      "tags": [
+        "cc",
+        "skill",
+        "frontend"
+      ]
+    },
+    "context7_auto_research": {
+      "category": "development",
+      "tags": [
+        "context7",
+        "auto",
+        "research"
+      ]
+    },
+    "csharp_pro": {
+      "category": "development",
+      "tags": [
+        "csharp"
+      ]
+    },
+    "discord_bot_architect": {
+      "category": "development",
+      "tags": [
+        "discord",
+        "bot"
+      ]
+    },
+    "dotnet_architect": {
+      "category": "development",
+      "tags": [
+        "dotnet"
+      ]
+    },
+    "dotnet_backend_patterns": {
+      "category": "development",
+      "tags": [
+        "dotnet",
+        "backend"
+      ]
+    },
+    "exa_search": {
+      "category": "development",
+      "tags": [
+        "exa",
+        "search"
+      ]
+    },
+    "fastapi_pro": {
+      "category": "development",
+      "tags": [
+        "fastapi"
+      ]
+    },
+    "fastapi_templates": {
+      "category": "development",
+      "tags": [
+        "fastapi"
+      ]
+    },
+    "firecrawl_scraper": {
+      "category": "development",
+      "tags": [
+        "firecrawl",
+        "scraper"
+      ]
+    },
+    "fp_ts_errors": {
+      "category": "development",
+      "tags": [
+        "fp",
+        "ts",
+        "errors"
+      ]
+    },
+    "fp_ts_pragmatic": {
+      "category": "development",
+      "tags": [
+        "fp",
+        "ts",
+        "pragmatic"
+      ]
+    },
+    "frontend_design": {
+      "category": "development",
+      "tags": [
+        "frontend"
+      ]
+    },
+    "frontend_developer": {
+      "category": "development",
+      "tags": [
+        "frontend"
+      ]
+    },
+    "frontend_mobile_development_component_scaffold": {
+      "category": "development",
+      "tags": [
+        "frontend",
+        "mobile",
+        "component"
+      ]
+    },
+    "frontend_slides": {
+      "category": "development",
+      "tags": [
+        "frontend",
+        "slides"
+      ]
+    },
+    "game_development/mobile_games": {
+      "category": "development",
+      "tags": [
+        "game",
+        "development/mobile",
+        "games"
+      ]
+    },
+    "go_concurrency_patterns": {
+      "category": "development",
+      "tags": [
+        "go",
+        "concurrency"
+      ]
+    },
+    "golang_pro": {
+      "category": "development",
+      "tags": [
+        "golang"
+      ]
+    },
+    "hubspot_integration": {
+      "category": "development",
+      "tags": [
+        "hubspot",
+        "integration"
+      ]
+    },
+    "javascript_mastery": {
+      "category": "development",
+      "tags": [
+        "javascript",
+        "mastery"
+      ]
+    },
+    "javascript_pro": {
+      "category": "development",
+      "tags": [
+        "javascript"
+      ]
+    },
+    "javascript_testing_patterns": {
+      "category": "development",
+      "tags": [
+        "javascript"
+      ]
+    },
+    "javascript_typescript_typescript_scaffold": {
+      "category": "development",
+      "tags": [
+        "javascript",
+        "typescript"
+      ]
+    },
+    "launch_strategy": {
+      "category": "development",
+      "tags": [
+        "launch"
+      ]
+    },
+    "makepad_skills": {
+      "category": "development",
+      "tags": [
+        "makepad",
+        "skills"
+      ]
+    },
+    "mcp_builder": {
+      "category": "development",
+      "tags": [
+        "mcp",
+        "builder"
+      ]
+    },
+    "memory_safety_patterns": {
+      "category": "development",
+      "tags": [
+        "memory",
+        "safety"
+      ]
+    },
+    "mobile_design": {
+      "category": "development",
+      "tags": [
+        "mobile"
+      ]
+    },
+    "mobile_developer": {
+      "category": "development",
+      "tags": [
+        "mobile"
+      ]
+    },
+    "modern_javascript_patterns": {
+      "category": "development",
+      "tags": [
+        "modern",
+        "javascript"
+      ]
+    },
+    "multi_platform_apps_multi_platform": {
+      "category": "development",
+      "tags": [
+        "multi",
+        "platform",
+        "apps"
+      ]
+    },
+    "n8n_code_python": {
+      "category": "development",
+      "tags": [
+        "n8n",
+        "code",
+        "python"
+      ]
+    },
+    "n8n_node_configuration": {
+      "category": "development",
+      "tags": [
+        "n8n",
+        "node",
+        "configuration"
+      ]
+    },
+    "observe_whatsapp": {
+      "category": "development",
+      "tags": [
+        "observe",
+        "whatsapp"
+      ]
+    },
+    "product_manager_toolkit": {
+      "category": "development",
+      "tags": [
+        "product",
+        "manager"
+      ]
+    },
+    "python_development_python_scaffold": {
+      "category": "development",
+      "tags": [
+        "python"
+      ]
+    },
+    "python_packaging": {
+      "category": "development",
+      "tags": [
+        "python",
+        "packaging"
+      ]
+    },
+    "python_patterns": {
+      "category": "development",
+      "tags": [
+        "python"
+      ]
+    },
+    "python_performance_optimization": {
+      "category": "development",
+      "tags": [
+        "python",
+        "performance",
+        "optimization"
+      ]
+    },
+    "python_pro": {
+      "category": "development",
+      "tags": [
+        "python"
+      ]
+    },
+    "python_testing_patterns": {
+      "category": "development",
+      "tags": [
+        "python"
+      ]
+    },
+    "react_modernization": {
+      "category": "development",
+      "tags": [
+        "react",
+        "modernization"
+      ]
+    },
+    "react_native_architecture": {
+      "category": "development",
+      "tags": [
+        "react",
+        "native",
+        "architecture"
+      ]
+    },
+    "react_patterns": {
+      "category": "development",
+      "tags": [
+        "react"
+      ]
+    },
+    "react_state_management": {
+      "category": "development",
+      "tags": [
+        "react",
+        "state"
+      ]
+    },
+    "reference_builder": {
+      "category": "development",
+      "tags": [
+        "reference",
+        "builder"
+      ]
+    },
+    "remotion_best_practices": {
+      "category": "development",
+      "tags": [
+        "remotion",
+        "video",
+        "react",
+        "animation",
+        "composition"
+      ]
+    },
+    "ruby_pro": {
+      "category": "development",
+      "tags": [
+        "ruby"
+      ]
+    },
+    "rust_async_patterns": {
+      "category": "development",
+      "tags": [
+        "rust",
+        "async"
+      ]
+    },
+    "rust_pro": {
+      "category": "development",
+      "tags": [
+        "rust"
+      ]
+    },
+    "senior_fullstack": {
+      "category": "development",
+      "tags": [
+        "senior",
+        "fullstack"
+      ]
+    },
+    "shodan_reconnaissance": {
+      "category": "development",
+      "tags": [
+        "shodan",
+        "reconnaissance"
+      ]
+    },
+    "shopify_apps": {
+      "category": "development",
+      "tags": [
+        "shopify",
+        "apps"
+      ]
+    },
+    "slack_bot_builder": {
+      "category": "development",
+      "tags": [
+        "slack",
+        "bot",
+        "builder"
+      ]
+    },
+    "swiftui_expert_skill": {
+      "category": "development",
+      "tags": [
+        "swiftui",
+        "skill"
+      ]
+    },
+    "systems_programming_rust_project": {
+      "category": "development",
+      "tags": [
+        "programming",
+        "rust"
+      ]
+    },
+    "tavily_web": {
+      "category": "development",
+      "tags": [
+        "tavily",
+        "web"
+      ]
+    },
+    "telegram_mini_app": {
+      "category": "development",
+      "tags": [
+        "telegram",
+        "mini",
+        "app"
+      ]
+    },
+    "temporal_python_testing": {
+      "category": "development",
+      "tags": [
+        "temporal",
+        "python"
+      ]
+    },
+    "typescript_advanced_types": {
+      "category": "development",
+      "tags": [
+        "typescript",
+        "advanced",
+        "types"
+      ]
+    },
+    "typescript_expert": {
+      "category": "development",
+      "tags": [
+        "typescript"
+      ]
+    },
+    "typescript_pro": {
+      "category": "development",
+      "tags": [
+        "typescript"
+      ]
+    },
+    "ui_ux_pro_max": {
+      "category": "development",
+      "tags": [
+        "ui",
+        "ux",
+        "max"
+      ]
+    },
+    "uv_package_manager": {
+      "category": "development",
+      "tags": [
+        "uv",
+        "package",
+        "manager"
+      ]
+    },
+    "viral_generator_builder": {
+      "category": "development",
+      "tags": [
+        "viral",
+        "generator",
+        "builder"
+      ]
+    },
+    "webapp_testing": {
+      "category": "development",
+      "tags": [
+        "webapp"
+      ]
+    },
+    "address_github_comments": {
+      "category": "general",
+      "tags": [
+        "address",
+        "github",
+        "comments"
+      ]
+    },
+    "agent_manager_skill": {
+      "category": "general",
+      "tags": [
+        "agent",
+        "manager",
+        "skill"
+      ]
+    },
+    "algorithmic_art": {
+      "category": "general",
+      "tags": [
+        "algorithmic",
+        "art"
+      ]
+    },
+    "angular_migration": {
+      "category": "general",
+      "tags": [
+        "angular",
+        "migration"
+      ]
+    },
+    "anti_reversing_techniques": {
+      "category": "general",
+      "tags": [
+        "anti",
+        "reversing",
+        "techniques"
+      ]
+    },
+    "app_builder": {
+      "category": "general",
+      "tags": [
+        "app",
+        "builder"
+      ]
+    },
+    "app_builder/templates": {
+      "category": "general",
+      "tags": [
+        "app",
+        "builder/templates"
+      ]
+    },
+    "arm_cortex_expert": {
+      "category": "general",
+      "tags": [
+        "arm",
+        "cortex"
+      ]
+    },
+    "avalonia_layout_zafiro": {
+      "category": "general",
+      "tags": [
+        "avalonia",
+        "layout",
+        "zafiro"
+      ]
+    },
+    "avalonia_zafiro_development": {
+      "category": "general",
+      "tags": [
+        "avalonia",
+        "zafiro"
+      ]
+    },
+    "backtesting_frameworks": {
+      "category": "general",
+      "tags": [
+        "backtesting",
+        "frameworks"
+      ]
+    },
+    "bazel_build_optimization": {
+      "category": "general",
+      "tags": [
+        "bazel",
+        "build",
+        "optimization"
+      ]
+    },
+    "blockchain_developer": {
+      "category": "general",
+      "tags": [
+        "blockchain"
+      ]
+    },
+    "brand_guidelines_anthropic": {
+      "category": "general",
+      "tags": [
+        "brand",
+        "guidelines",
+        "anthropic"
+      ]
+    },
+    "brand_guidelines_community": {
+      "category": "general",
+      "tags": [
+        "brand",
+        "guidelines",
+        "community"
+      ]
+    },
+    "busybox_on_windows": {
+      "category": "general",
+      "tags": [
+        "busybox",
+        "on",
+        "windows"
+      ]
+    },
+    "c_pro": {
+      "category": "general",
+      "tags": [
+        "c"
+      ]
+    },
+    "canvas_design": {
+      "category": "general",
+      "tags": [
+        "canvas"
+      ]
+    },
+    "cc_skill_continuous_learning": {
+      "category": "general",
+      "tags": [
+        "cc",
+        "skill",
+        "continuous",
+        "learning"
+      ]
+    },
+    "cc_skill_project_guidelines_example": {
+      "category": "general",
+      "tags": [
+        "cc",
+        "skill",
+        "guidelines",
+        "example"
+      ]
+    },
+    "cc_skill_strategic_compact": {
+      "category": "general",
+      "tags": [
+        "cc",
+        "skill",
+        "strategic",
+        "compact"
+      ]
+    },
+    "claude_ally_health": {
+      "category": "general",
+      "tags": [
+        "claude",
+        "ally",
+        "health"
+      ]
+    },
+    "claude_code_guide": {
+      "category": "general",
+      "tags": [
+        "claude",
+        "code"
+      ]
+    },
+    "claude_scientific_skills": {
+      "category": "general",
+      "tags": [
+        "claude",
+        "scientific",
+        "skills"
+      ]
+    },
+    "claude_speed_reader": {
+      "category": "general",
+      "tags": [
+        "claude",
+        "speed",
+        "reader"
+      ]
+    },
+    "claude_win11_speckit_update_skill": {
+      "category": "general",
+      "tags": [
+        "claude",
+        "win11",
+        "speckit",
+        "update",
+        "skill"
+      ]
+    },
+    "clean_code": {
+      "category": "general",
+      "tags": [
+        "clean",
+        "code"
+      ]
+    },
+    "code_documentation_code_explain": {
+      "category": "general",
+      "tags": [
+        "code",
+        "documentation",
+        "explain"
+      ]
+    },
+    "code_refactoring_context_restore": {
+      "category": "general",
+      "tags": [
+        "code",
+        "refactoring",
+        "restore"
+      ]
+    },
+    "code_refactoring_tech_debt": {
+      "category": "general",
+      "tags": [
+        "code",
+        "refactoring",
+        "tech",
+        "debt"
+      ]
+    },
+    "code_review_excellence": {
+      "category": "general",
+      "tags": [
+        "code",
+        "excellence"
+      ]
+    },
+    "codebase_cleanup_tech_debt": {
+      "category": "general",
+      "tags": [
+        "codebase",
+        "cleanup",
+        "tech",
+        "debt"
+      ]
+    },
+    "commit": {
+      "category": "general",
+      "tags": [
+        "commit"
+      ]
+    },
+    "comprehensive_review_full_review": {
+      "category": "general",
+      "tags": [
+        "comprehensive",
+        "full"
+      ]
+    },
+    "comprehensive_review_pr_enhance": {
+      "category": "general",
+      "tags": [
+        "comprehensive",
+        "pr",
+        "enhance"
+      ]
+    },
+    "concise_planning": {
+      "category": "general",
+      "tags": [
+        "concise",
+        "planning"
+      ]
+    },
+    "context_compression": {
+      "category": "general",
+      "tags": [
+        "compression"
+      ]
+    },
+    "context_fundamentals": {
+      "category": "general",
+      "tags": [
+        "fundamentals"
+      ]
+    },
+    "context_management_context_restore": {
+      "category": "general",
+      "tags": [
+        "restore"
+      ]
+    },
+    "context_management_context_save": {
+      "category": "general",
+      "tags": [
+        "save"
+      ]
+    },
+    "context_optimization": {
+      "category": "general",
+      "tags": [
+        "optimization"
+      ]
+    },
+    "create_pr": {
+      "category": "general",
+      "tags": [
+        "create",
+        "pr"
+      ]
+    },
+    "culture_index": {
+      "category": "general",
+      "tags": [
+        "culture",
+        "index"
+      ]
+    },
+    "daily_news_report": {
+      "category": "general",
+      "tags": [
+        "daily",
+        "news",
+        "report"
+      ]
+    },
+    "debugging_strategies": {
+      "category": "general",
+      "tags": [
+        "debugging",
+        "strategies"
+      ]
+    },
+    "debugging_toolkit_smart_debug": {
+      "category": "general",
+      "tags": [
+        "debugging",
+        "debug"
+      ]
+    },
+    "design_md": {
+      "category": "general",
+      "tags": [
+        "md"
+      ]
+    },
+    "dispatching_parallel_agents": {
+      "category": "general",
+      "tags": [
+        "dispatching",
+        "parallel",
+        "agents"
+      ]
+    },
+    "docx_official": {
+      "category": "general",
+      "tags": [
+        "docx",
+        "official"
+      ]
+    },
+    "dx_optimizer": {
+      "category": "general",
+      "tags": [
+        "dx",
+        "optimizer"
+      ]
+    },
+    "environment_setup_guide": {
+      "category": "general",
+      "tags": [
+        "environment",
+        "setup"
+      ]
+    },
+    "error_debugging_multi_agent_review": {
+      "category": "general",
+      "tags": [
+        "error",
+        "debugging",
+        "multi",
+        "agent"
+      ]
+    },
+    "error_diagnostics_smart_debug": {
+      "category": "general",
+      "tags": [
+        "error",
+        "diagnostics",
+        "debug"
+      ]
+    },
+    "evaluation": {
+      "category": "general",
+      "tags": [
+        "evaluation"
+      ]
+    },
+    "executing_plans": {
+      "category": "general",
+      "tags": [
+        "executing",
+        "plans"
+      ]
+    },
+    "fal_platform": {
+      "category": "general",
+      "tags": [
+        "fal",
+        "platform"
+      ]
+    },
+    "ffuf_claude_skill": {
+      "category": "general",
+      "tags": [
+        "ffuf",
+        "claude",
+        "skill"
+      ]
+    },
+    "file_organizer": {
+      "category": "general",
+      "tags": [
+        "file",
+        "organizer"
+      ]
+    },
+    "finishing_a_development_branch": {
+      "category": "general",
+      "tags": [
+        "finishing",
+        "a",
+        "branch"
+      ]
+    },
+    "fix_review": {
+      "category": "general",
+      "tags": [
+        "fix"
+      ]
+    },
+    "framework_migration_code_migrate": {
+      "category": "general",
+      "tags": [
+        "framework",
+        "migration",
+        "code",
+        "migrate"
+      ]
+    },
+    "game_development": {
+      "category": "general",
+      "tags": [
+        "game"
+      ]
+    },
+    "game_development/2d_games": {
+      "category": "general",
+      "tags": [
+        "game",
+        "development/2d",
+        "games"
+      ]
+    },
+    "game_development/3d_games": {
+      "category": "general",
+      "tags": [
+        "game",
+        "development/3d",
+        "games"
+      ]
+    },
+    "game_development/game_audio": {
+      "category": "general",
+      "tags": [
+        "game",
+        "development/game",
+        "audio"
+      ]
+    },
+    "game_development/game_design": {
+      "category": "general",
+      "tags": [
+        "game",
+        "development/game"
+      ]
+    },
+    "game_development/pc_games": {
+      "category": "general",
+      "tags": [
+        "game",
+        "development/pc",
+        "games"
+      ]
+    },
+    "game_development/vr_ar": {
+      "category": "general",
+      "tags": [
+        "game",
+        "development/vr",
+        "ar"
+      ]
+    },
+    "game_development/web_games": {
+      "category": "general",
+      "tags": [
+        "game",
+        "development/web",
+        "games"
+      ]
+    },
+    "git_advanced_workflows": {
+      "category": "general",
+      "tags": [
+        "git",
+        "advanced"
+      ]
+    },
+    "git_pr_workflows_onboard": {
+      "category": "general",
+      "tags": [
+        "git",
+        "pr",
+        "onboard"
+      ]
+    },
+    "git_pr_workflows_pr_enhance": {
+      "category": "general",
+      "tags": [
+        "git",
+        "pr",
+        "enhance"
+      ]
+    },
+    "imagen": {
+      "category": "general",
+      "tags": [
+        "imagen"
+      ]
+    },
+    "infinite_gratitude": {
+      "category": "general",
+      "tags": [
+        "infinite",
+        "gratitude"
+      ]
+    },
+    "interactive_portfolio": {
+      "category": "general",
+      "tags": [
+        "interactive",
+        "portfolio"
+      ]
+    },
+    "last30days": {
+      "category": "general",
+      "tags": [
+        "last30days"
+      ]
+    },
+    "legacy_modernizer": {
+      "category": "general",
+      "tags": [
+        "legacy",
+        "modernizer"
+      ]
+    },
+    "linear_claude_skill": {
+      "category": "general",
+      "tags": [
+        "linear",
+        "claude",
+        "skill"
+      ]
+    },
+    "lint_and_validate": {
+      "category": "general",
+      "tags": [
+        "lint",
+        "and",
+        "validate"
+      ]
+    },
+    "linux_privilege_escalation": {
+      "category": "general",
+      "tags": [
+        "linux",
+        "privilege",
+        "escalation"
+      ]
+    },
+    "linux_shell_scripting": {
+      "category": "general",
+      "tags": [
+        "linux",
+        "shell",
+        "scripting"
+      ]
+    },
+    "memory_systems": {
+      "category": "general",
+      "tags": [
+        "memory"
+      ]
+    },
+    "micro_saas_launcher": {
+      "category": "general",
+      "tags": [
+        "micro",
+        "saas",
+        "launcher"
+      ]
+    },
+    "monorepo_management": {
+      "category": "general",
+      "tags": [
+        "monorepo"
+      ]
+    },
+    "nft_standards": {
+      "category": "general",
+      "tags": [
+        "nft",
+        "standards"
+      ]
+    },
+    "nosql_expert": {
+      "category": "general",
+      "tags": [
+        "nosql"
+      ]
+    },
+    "obsidian_clipper_template_creator": {
+      "category": "general",
+      "tags": [
+        "obsidian",
+        "clipper",
+        "creator"
+      ]
+    },
+    "onboarding_cro": {
+      "category": "general",
+      "tags": [
+        "onboarding",
+        "cro"
+      ]
+    },
+    "paid_ads": {
+      "category": "general",
+      "tags": [
+        "paid",
+        "ads"
+      ]
+    },
+    "paypal_integration": {
+      "category": "general",
+      "tags": [
+        "paypal",
+        "integration"
+      ]
+    },
+    "performance_profiling": {
+      "category": "general",
+      "tags": [
+        "performance",
+        "profiling"
+      ]
+    },
+    "personal_tool_builder": {
+      "category": "general",
+      "tags": [
+        "personal",
+        "builder"
+      ]
+    },
+    "plan_writing": {
+      "category": "general",
+      "tags": [
+        "plan",
+        "writing"
+      ]
+    },
+    "planning_with_files": {
+      "category": "general",
+      "tags": [
+        "planning",
+        "with",
+        "files"
+      ]
+    },
+    "posix_shell_pro": {
+      "category": "general",
+      "tags": [
+        "posix",
+        "shell"
+      ]
+    },
+    "pptx_official": {
+      "category": "general",
+      "tags": [
+        "pptx",
+        "official"
+      ]
+    },
+    "privilege_escalation_methods": {
+      "category": "general",
+      "tags": [
+        "privilege",
+        "escalation",
+        "methods"
+      ]
+    },
+    "prompt_library": {
+      "category": "general",
+      "tags": [
+        "prompt",
+        "library"
+      ]
+    },
+    "readme": {
+      "category": "general",
+      "tags": [
+        "readme"
+      ]
+    },
+    "receiving_code_review": {
+      "category": "general",
+      "tags": [
+        "receiving",
+        "code"
+      ]
+    },
+    "referral_program": {
+      "category": "general",
+      "tags": [
+        "referral",
+        "program"
+      ]
+    },
+    "requesting_code_review": {
+      "category": "general",
+      "tags": [
+        "requesting",
+        "code"
+      ]
+    },
+    "search_specialist": {
+      "category": "general",
+      "tags": [
+        "search"
+      ]
+    },
+    "sharp_edges": {
+      "category": "general",
+      "tags": [
+        "sharp",
+        "edges"
+      ]
+    },
+    "shellcheck_configuration": {
+      "category": "general",
+      "tags": [
+        "shellcheck",
+        "configuration"
+      ]
+    },
+    "signup_flow_cro": {
+      "category": "general",
+      "tags": [
+        "signup",
+        "flow",
+        "cro"
+      ]
+    },
+    "skill_creator": {
+      "category": "general",
+      "tags": [
+        "skill",
+        "creator"
+      ]
+    },
+    "skill_rails_upgrade": {
+      "category": "general",
+      "tags": [
+        "skill",
+        "rails",
+        "upgrade"
+      ]
+    },
+    "slack_gif_creator": {
+      "category": "general",
+      "tags": [
+        "slack",
+        "gif",
+        "creator"
+      ]
+    },
+    "social_content": {
+      "category": "general",
+      "tags": [
+        "social",
+        "content"
+      ]
+    },
+    "subagent_driven_development": {
+      "category": "general",
+      "tags": [
+        "subagent",
+        "driven"
+      ]
+    },
+    "superpowers_lab": {
+      "category": "general",
+      "tags": [
+        "superpowers",
+        "lab"
+      ]
+    },
+    "theme_factory": {
+      "category": "general",
+      "tags": [
+        "theme",
+        "factory"
+      ]
+    },
+    "threejs_skills": {
+      "category": "general",
+      "tags": [
+        "threejs",
+        "skills"
+      ]
+    },
+    "turborepo_caching": {
+      "category": "general",
+      "tags": [
+        "turborepo",
+        "caching"
+      ]
+    },
+    "tutorial_engineer": {
+      "category": "general",
+      "tags": [
+        "tutorial"
+      ]
+    },
+    "ui_skills": {
+      "category": "general",
+      "tags": [
+        "ui",
+        "skills"
+      ]
+    },
+    "ui_ux_designer": {
+      "category": "general",
+      "tags": [
+        "ui",
+        "ux",
+        "designer"
+      ]
+    },
+    "upgrading_expo": {
+      "category": "general",
+      "tags": [
+        "upgrading",
+        "expo"
+      ]
+    },
+    "upstash_qstash": {
+      "category": "general",
+      "tags": [
+        "upstash",
+        "qstash"
+      ]
+    },
+    "using_git_worktrees": {
+      "category": "general",
+      "tags": [
+        "using",
+        "git",
+        "worktrees"
+      ]
+    },
+    "using_superpowers": {
+      "category": "general",
+      "tags": [
+        "using",
+        "superpowers"
+      ]
+    },
+    "verification_before_completion": {
+      "category": "general",
+      "tags": [
+        "verification",
+        "before",
+        "completion"
+      ]
+    },
+    "web_performance_optimization": {
+      "category": "general",
+      "tags": [
+        "web",
+        "performance",
+        "optimization"
+      ]
+    },
+    "windows_privilege_escalation": {
+      "category": "general",
+      "tags": [
+        "windows",
+        "privilege",
+        "escalation"
+      ]
+    },
+    "writing_plans": {
+      "category": "general",
+      "tags": [
+        "writing",
+        "plans"
+      ]
+    },
+    "writing_skills": {
+      "category": "general",
+      "tags": [
+        "writing",
+        "skills"
+      ]
+    },
+    "x_article_publisher_skill": {
+      "category": "general",
+      "tags": [
+        "x",
+        "article",
+        "publisher",
+        "skill"
+      ]
+    },
+    "agent_evaluation": {
+      "category": "infrastructure",
+      "tags": [
+        "agent",
+        "evaluation"
+      ]
+    },
+    "airflow_dag_patterns": {
+      "category": "infrastructure",
+      "tags": [
+        "airflow",
+        "dag"
+      ]
+    },
+    "api_testing_observability_api_mock": {
+      "category": "infrastructure",
+      "tags": [
+        "api",
+        "observability",
+        "mock"
+      ]
+    },
+    "application_performance_performance_optimization": {
+      "category": "infrastructure",
+      "tags": [
+        "application",
+        "performance",
+        "optimization"
+      ]
+    },
+    "aws_serverless": {
+      "category": "infrastructure",
+      "tags": [
+        "aws",
+        "serverless"
+      ]
+    },
+    "aws_skills": {
+      "category": "infrastructure",
+      "tags": [
+        "aws",
+        "skills"
+      ]
+    },
+    "backend_architect": {
+      "category": "infrastructure",
+      "tags": [
+        "backend"
+      ]
+    },
+    "backend_development_feature_development": {
+      "category": "infrastructure",
+      "tags": [
+        "backend"
+      ]
+    },
+    "bash_defensive_patterns": {
+      "category": "infrastructure",
+      "tags": [
+        "bash",
+        "defensive"
+      ]
+    },
+    "bash_pro": {
+      "category": "infrastructure",
+      "tags": [
+        "bash"
+      ]
+    },
+    "bats_testing_patterns": {
+      "category": "infrastructure",
+      "tags": [
+        "bats"
+      ]
+    },
+    "c4_container": {
+      "category": "infrastructure",
+      "tags": [
+        "c4",
+        "container"
+      ]
+    },
+    "claude_d3js_skill": {
+      "category": "infrastructure",
+      "tags": [
+        "claude",
+        "d3js",
+        "skill"
+      ]
+    },
+    "code_review_ai_ai_review": {
+      "category": "infrastructure",
+      "tags": [
+        "code",
+        "ai"
+      ]
+    },
+    "cost_optimization": {
+      "category": "infrastructure",
+      "tags": [
+        "cost",
+        "optimization"
+      ]
+    },
+    "data_engineer": {
+      "category": "infrastructure",
+      "tags": [
+        "data"
+      ]
+    },
+    "data_engineering_data_pipeline": {
+      "category": "infrastructure",
+      "tags": [
+        "data",
+        "engineering",
+        "pipeline"
+      ]
+    },
+    "database_cloud_optimization_cost_optimize": {
+      "category": "infrastructure",
+      "tags": [
+        "database",
+        "cloud",
+        "optimization",
+        "cost",
+        "optimize"
+      ]
+    },
+    "database_migrations_migration_observability": {
+      "category": "infrastructure",
+      "tags": [
+        "database",
+        "cdc",
+        "debezium",
+        "kafka",
+        "prometheus",
+        "grafana",
+        "monitoring"
+      ]
+    },
+    "database_optimizer": {
+      "category": "infrastructure",
+      "tags": [
+        "database",
+        "optimizer"
+      ]
+    },
+    "deployment_procedures": {
+      "category": "infrastructure",
+      "tags": [
+        "deployment",
+        "procedures"
+      ]
+    },
+    "deployment_validation_config_validate": {
+      "category": "infrastructure",
+      "tags": [
+        "deployment",
+        "validation",
+        "config",
+        "validate"
+      ]
+    },
+    "distributed_debugging_debug_trace": {
+      "category": "infrastructure",
+      "tags": [
+        "distributed",
+        "debugging",
+        "debug",
+        "trace"
+      ]
+    },
+    "distributed_tracing": {
+      "category": "infrastructure",
+      "tags": [
+        "distributed",
+        "tracing"
+      ]
+    },
+    "django_pro": {
+      "category": "infrastructure",
+      "tags": [
+        "django"
+      ]
+    },
+    "e2e_testing_patterns": {
+      "category": "infrastructure",
+      "tags": [
+        "e2e"
+      ]
+    },
+    "error_debugging_error_analysis": {
+      "category": "infrastructure",
+      "tags": [
+        "error",
+        "debugging"
+      ]
+    },
+    "error_debugging_error_trace": {
+      "category": "infrastructure",
+      "tags": [
+        "error",
+        "debugging",
+        "trace"
+      ]
+    },
+    "error_diagnostics_error_analysis": {
+      "category": "infrastructure",
+      "tags": [
+        "error",
+        "diagnostics"
+      ]
+    },
+    "error_diagnostics_error_trace": {
+      "category": "infrastructure",
+      "tags": [
+        "error",
+        "diagnostics",
+        "trace"
+      ]
+    },
+    "expo_deployment": {
+      "category": "infrastructure",
+      "tags": [
+        "expo",
+        "deployment"
+      ]
+    },
+    "file_uploads": {
+      "category": "infrastructure",
+      "tags": [
+        "file",
+        "uploads"
+      ]
+    },
+    "flutter_expert": {
+      "category": "infrastructure",
+      "tags": [
+        "flutter"
+      ]
+    },
+    "game_development/game_art": {
+      "category": "infrastructure",
+      "tags": [
+        "game",
+        "development/game",
+        "art"
+      ]
+    },
+    "gcp_cloud_run": {
+      "category": "infrastructure",
+      "tags": [
+        "gcp",
+        "cloud",
+        "run"
+      ]
+    },
+    "git_pr_workflows_git_workflow": {
+      "category": "infrastructure",
+      "tags": [
+        "git",
+        "pr"
+      ]
+    },
+    "github_actions_templates": {
+      "category": "infrastructure",
+      "tags": [
+        "github",
+        "actions"
+      ]
+    },
+    "github_workflow_automation": {
+      "category": "infrastructure",
+      "tags": [
+        "github"
+      ]
+    },
+    "gitlab_ci_patterns": {
+      "category": "infrastructure",
+      "tags": [
+        "gitlab",
+        "ci"
+      ]
+    },
+    "gitops_workflow": {
+      "category": "infrastructure",
+      "tags": [
+        "gitops"
+      ]
+    },
+    "grafana_dashboards": {
+      "category": "infrastructure",
+      "tags": [
+        "grafana",
+        "dashboards"
+      ]
+    },
+    "helm_chart_scaffolding": {
+      "category": "infrastructure",
+      "tags": [
+        "helm",
+        "chart"
+      ]
+    },
+    "hugging_face_cli": {
+      "category": "infrastructure",
+      "tags": [
+        "hugging",
+        "face",
+        "cli"
+      ]
+    },
+    "hybrid_cloud_networking": {
+      "category": "infrastructure",
+      "tags": [
+        "hybrid",
+        "cloud",
+        "networking"
+      ]
+    },
+    "istio_traffic_management": {
+      "category": "infrastructure",
+      "tags": [
+        "istio",
+        "traffic"
+      ]
+    },
+    "iterate_pr": {
+      "category": "infrastructure",
+      "tags": [
+        "iterate",
+        "pr"
+      ]
+    },
+    "java_pro": {
+      "category": "infrastructure",
+      "tags": [
+        "java"
+      ]
+    },
+    "kpi_dashboard_design": {
+      "category": "infrastructure",
+      "tags": [
+        "kpi",
+        "dashboard"
+      ]
+    },
+    "langfuse": {
+      "category": "infrastructure",
+      "tags": [
+        "langfuse"
+      ]
+    },
+    "llm_app_patterns": {
+      "category": "infrastructure",
+      "tags": [
+        "llm",
+        "app"
+      ]
+    },
+    "machine_learning_ops_ml_pipeline": {
+      "category": "infrastructure",
+      "tags": [
+        "machine",
+        "learning",
+        "ops",
+        "ml",
+        "pipeline"
+      ]
+    },
+    "microservices_patterns": {
+      "category": "infrastructure",
+      "tags": [
+        "microservices"
+      ]
+    },
+    "ml_engineer": {
+      "category": "infrastructure",
+      "tags": [
+        "ml"
+      ]
+    },
+    "ml_pipeline_workflow": {
+      "category": "infrastructure",
+      "tags": [
+        "ml",
+        "pipeline"
+      ]
+    },
+    "mlops_engineer": {
+      "category": "infrastructure",
+      "tags": [
+        "mlops"
+      ]
+    },
+    "moodle_external_api_development": {
+      "category": "infrastructure",
+      "tags": [
+        "moodle",
+        "external",
+        "api"
+      ]
+    },
+    "multi_cloud_architecture": {
+      "category": "infrastructure",
+      "tags": [
+        "multi",
+        "cloud",
+        "architecture"
+      ]
+    },
+    "network_101": {
+      "category": "infrastructure",
+      "tags": [
+        "network",
+        "101"
+      ]
+    },
+    "observability_monitoring_monitor_setup": {
+      "category": "infrastructure",
+      "tags": [
+        "observability",
+        "monitoring",
+        "monitor",
+        "setup"
+      ]
+    },
+    "observability_monitoring_slo_implement": {
+      "category": "infrastructure",
+      "tags": [
+        "observability",
+        "monitoring",
+        "slo",
+        "implement"
+      ]
+    },
+    "performance_engineer": {
+      "category": "infrastructure",
+      "tags": [
+        "performance"
+      ]
+    },
+    "performance_testing_review_ai_review": {
+      "category": "infrastructure",
+      "tags": [
+        "performance",
+        "ai"
+      ]
+    },
+    "prometheus_configuration": {
+      "category": "infrastructure",
+      "tags": [
+        "prometheus",
+        "configuration"
+      ]
+    },
+    "protocol_reverse_engineering": {
+      "category": "infrastructure",
+      "tags": [
+        "protocol",
+        "reverse",
+        "engineering"
+      ]
+    },
+    "server_management": {
+      "category": "infrastructure",
+      "tags": [
+        "server"
+      ]
+    },
+    "service_mesh_observability": {
+      "category": "infrastructure",
+      "tags": [
+        "service",
+        "mesh",
+        "observability"
+      ]
+    },
+    "slo_implementation": {
+      "category": "infrastructure",
+      "tags": [
+        "slo"
+      ]
+    },
+    "sql_pro": {
+      "category": "infrastructure",
+      "tags": [
+        "sql"
+      ]
+    },
+    "temporal_python_pro": {
+      "category": "infrastructure",
+      "tags": [
+        "temporal",
+        "python"
+      ]
+    },
+    "terraform_module_library": {
+      "category": "infrastructure",
+      "tags": [
+        "terraform",
+        "module",
+        "library"
+      ]
+    },
+    "terraform_skill": {
+      "category": "infrastructure",
+      "tags": [
+        "terraform",
+        "skill"
+      ]
+    },
+    "test_automator": {
+      "category": "infrastructure",
+      "tags": [
+        "automator"
+      ]
+    },
+    "unity_developer": {
+      "category": "infrastructure",
+      "tags": [
+        "unity"
+      ]
+    },
+    "vercel_deploy_claimable": {
+      "category": "infrastructure",
+      "tags": [
+        "vercel",
+        "deploy",
+        "claimable"
+      ]
+    },
+    "vercel_deployment": {
+      "category": "infrastructure",
+      "tags": [
+        "vercel",
+        "deployment"
+      ]
+    },
+    "voice_agents": {
+      "category": "infrastructure",
+      "tags": [
+        "voice",
+        "agents"
+      ]
+    },
+    "wireshark_analysis": {
+      "category": "infrastructure",
+      "tags": [
+        "wireshark"
+      ]
+    },
+    "workflow_automation": {
+      "category": "infrastructure",
+      "tags": []
+    },
+    "accessibility_compliance_accessibility_audit": {
+      "category": "security",
+      "tags": [
+        "accessibility",
+        "compliance",
+        "audit"
+      ]
+    },
+    "active_directory_attacks": {
+      "category": "security",
+      "tags": [
+        "active",
+        "directory",
+        "attacks"
+      ]
+    },
+    "agent_memory_systems": {
+      "category": "security",
+      "tags": [
+        "agent",
+        "memory"
+      ]
+    },
+    "ai_product": {
+      "category": "security",
+      "tags": [
+        "ai",
+        "product"
+      ]
+    },
+    "api_fuzzing_bug_bounty": {
+      "category": "security",
+      "tags": [
+        "api",
+        "fuzzing",
+        "bug",
+        "bounty"
+      ]
+    },
+    "api_security_best_practices": {
+      "category": "security",
+      "tags": [
+        "api",
+        "security",
+        "best",
+        "practices"
+      ]
+    },
+    "attack_tree_construction": {
+      "category": "security",
+      "tags": [
+        "attack",
+        "tree",
+        "construction"
+      ]
+    },
+    "auth_implementation_patterns": {
+      "category": "security",
+      "tags": [
+        "auth"
+      ]
+    },
+    "aws_penetration_testing": {
+      "category": "security",
+      "tags": [
+        "aws",
+        "penetration"
+      ]
+    },
+    "backend_security_coder": {
+      "category": "security",
+      "tags": [
+        "backend",
+        "security",
+        "coder"
+      ]
+    },
+    "broken_authentication": {
+      "category": "security",
+      "tags": [
+        "broken",
+        "authentication"
+      ]
+    },
+    "burp_suite_testing": {
+      "category": "security",
+      "tags": [
+        "burp",
+        "suite"
+      ]
+    },
+    "cc_skill_security_review": {
+      "category": "security",
+      "tags": [
+        "cc",
+        "skill",
+        "security"
+      ]
+    },
+    "cicd_automation_workflow_automate": {
+      "category": "security",
+      "tags": [
+        "cicd",
+        "automate"
+      ]
+    },
+    "clerk_auth": {
+      "category": "security",
+      "tags": [
+        "clerk",
+        "auth"
+      ]
+    },
+    "cloud_architect": {
+      "category": "security",
+      "tags": [
+        "cloud"
+      ]
+    },
+    "cloud_penetration_testing": {
+      "category": "security",
+      "tags": [
+        "cloud",
+        "penetration"
+      ]
+    },
+    "code_review_checklist": {
+      "category": "security",
+      "tags": [
+        "code",
+        "checklist"
+      ]
+    },
+    "code_reviewer": {
+      "category": "security",
+      "tags": [
+        "code"
+      ]
+    },
+    "codebase_cleanup_deps_audit": {
+      "category": "security",
+      "tags": [
+        "codebase",
+        "cleanup",
+        "deps",
+        "audit"
+      ]
+    },
+    "computer_use_agents": {
+      "category": "security",
+      "tags": [
+        "computer",
+        "use",
+        "agents"
+      ]
+    },
+    "database_admin": {
+      "category": "security",
+      "tags": [
+        "database",
+        "admin"
+      ]
+    },
+    "database_migration": {
+      "category": "security",
+      "tags": [
+        "database",
+        "migration"
+      ]
+    },
+    "database_migrations_sql_migrations": {
+      "category": "security",
+      "tags": [
+        "database",
+        "sql",
+        "migrations",
+        "postgresql",
+        "mysql",
+        "flyway",
+        "liquibase",
+        "alembic",
+        "zero-downtime"
+      ]
+    },
+    "dependency_management_deps_audit": {
+      "category": "security",
+      "tags": [
+        "dependency",
+        "deps",
+        "audit"
+      ]
+    },
+    "deployment_engineer": {
+      "category": "security",
+      "tags": [
+        "deployment"
+      ]
+    },
+    "deployment_pipeline_design": {
+      "category": "security",
+      "tags": [
+        "deployment",
+        "pipeline"
+      ]
+    },
+    "design_orchestration": {
+      "category": "security",
+      "tags": []
+    },
+    "devops_troubleshooter": {
+      "category": "security",
+      "tags": [
+        "devops",
+        "troubleshooter"
+      ]
+    },
+    "docker_expert": {
+      "category": "security",
+      "tags": [
+        "docker"
+      ]
+    },
+    "ethical_hacking_methodology": {
+      "category": "security",
+      "tags": [
+        "ethical",
+        "hacking",
+        "methodology"
+      ]
+    },
+    "file_path_traversal": {
+      "category": "security",
+      "tags": [
+        "file",
+        "path",
+        "traversal"
+      ]
+    },
+    "find_bugs": {
+      "category": "security",
+      "tags": [
+        "find",
+        "bugs"
+      ]
+    },
+    "firebase": {
+      "category": "security",
+      "tags": [
+        "firebase"
+      ]
+    },
+    "firmware_analyst": {
+      "category": "security",
+      "tags": [
+        "firmware",
+        "analyst"
+      ]
+    },
+    "form_cro": {
+      "category": "security",
+      "tags": [
+        "form",
+        "cro"
+      ]
+    },
+    "framework_migration_deps_upgrade": {
+      "category": "security",
+      "tags": [
+        "framework",
+        "migration",
+        "deps",
+        "upgrade"
+      ]
+    },
+    "frontend_mobile_security_xss_scan": {
+      "category": "security",
+      "tags": [
+        "frontend",
+        "mobile",
+        "security",
+        "xss",
+        "scan"
+      ]
+    },
+    "frontend_security_coder": {
+      "category": "security",
+      "tags": [
+        "frontend",
+        "security",
+        "coder"
+      ]
+    },
+    "gdpr_data_handling": {
+      "category": "security",
+      "tags": [
+        "gdpr",
+        "data",
+        "handling"
+      ]
+    },
+    "graphql_architect": {
+      "category": "security",
+      "tags": [
+        "graphql"
+      ]
+    },
+    "html_injection_testing": {
+      "category": "security",
+      "tags": [
+        "html",
+        "injection"
+      ]
+    },
+    "hugging_face_jobs": {
+      "category": "security",
+      "tags": [
+        "hugging",
+        "face",
+        "jobs"
+      ]
+    },
+    "hybrid_cloud_architect": {
+      "category": "security",
+      "tags": [
+        "hybrid",
+        "cloud"
+      ]
+    },
+    "idor_testing": {
+      "category": "security",
+      "tags": [
+        "idor"
+      ]
+    },
+    "incident_responder": {
+      "category": "security",
+      "tags": [
+        "incident",
+        "responder"
+      ]
+    },
+    "incident_response_incident_response": {
+      "category": "security",
+      "tags": [
+        "incident",
+        "response"
+      ]
+    },
+    "incident_response_smart_fix": {
+      "category": "security",
+      "tags": [
+        "incident",
+        "response",
+        "fix"
+      ]
+    },
+    "incident_runbook_templates": {
+      "category": "security",
+      "tags": [
+        "incident",
+        "runbook"
+      ]
+    },
+    "internal_comms_anthropic": {
+      "category": "security",
+      "tags": [
+        "internal",
+        "comms",
+        "anthropic"
+      ]
+    },
+    "internal_comms_community": {
+      "category": "security",
+      "tags": [
+        "internal",
+        "comms",
+        "community"
+      ]
+    },
+    "k8s_manifest_generator": {
+      "category": "security",
+      "tags": [
+        "k8s",
+        "manifest",
+        "generator"
+      ]
+    },
+    "k8s_security_policies": {
+      "category": "security",
+      "tags": [
+        "k8s",
+        "security",
+        "policies"
+      ]
+    },
+    "kubernetes_architect": {
+      "category": "security",
+      "tags": [
+        "kubernetes"
+      ]
+    },
+    "legal_advisor": {
+      "category": "security",
+      "tags": [
+        "legal",
+        "advisor"
+      ]
+    },
+    "linkerd_patterns": {
+      "category": "security",
+      "tags": [
+        "linkerd"
+      ]
+    },
+    "loki_mode": {
+      "category": "security",
+      "tags": [
+        "loki",
+        "mode"
+      ]
+    },
+    "malware_analyst": {
+      "category": "security",
+      "tags": [
+        "malware",
+        "analyst"
+      ]
+    },
+    "memory_forensics": {
+      "category": "security",
+      "tags": [
+        "memory",
+        "forensics"
+      ]
+    },
+    "metasploit_framework": {
+      "category": "security",
+      "tags": [
+        "metasploit",
+        "framework"
+      ]
+    },
+    "mobile_security_coder": {
+      "category": "security",
+      "tags": [
+        "mobile",
+        "security",
+        "coder"
+      ]
+    },
+    "mtls_configuration": {
+      "category": "security",
+      "tags": [
+        "mtls",
+        "configuration"
+      ]
+    },
+    "multi_agent_brainstorming": {
+      "category": "security",
+      "tags": [
+        "multi",
+        "agent",
+        "brainstorming"
+      ]
+    },
+    "network_engineer": {
+      "category": "security",
+      "tags": [
+        "network"
+      ]
+    },
+    "nextjs_supabase_auth": {
+      "category": "security",
+      "tags": [
+        "nextjs",
+        "supabase",
+        "auth"
+      ]
+    },
+    "nodejs_best_practices": {
+      "category": "security",
+      "tags": [
+        "nodejs",
+        "best",
+        "practices"
+      ]
+    },
+    "notebooklm": {
+      "category": "security",
+      "tags": [
+        "notebooklm"
+      ]
+    },
+    "observability_engineer": {
+      "category": "security",
+      "tags": [
+        "observability"
+      ]
+    },
+    "openapi_spec_generation": {
+      "category": "security",
+      "tags": [
+        "openapi",
+        "spec",
+        "generation"
+      ]
+    },
+    "payment_integration": {
+      "category": "security",
+      "tags": [
+        "payment",
+        "integration"
+      ]
+    },
+    "pci_compliance": {
+      "category": "security",
+      "tags": [
+        "pci",
+        "compliance"
+      ]
+    },
+    "pentest_checklist": {
+      "category": "security",
+      "tags": [
+        "pentest",
+        "checklist"
+      ]
+    },
+    "plaid_fintech": {
+      "category": "security",
+      "tags": [
+        "plaid",
+        "fintech"
+      ]
+    },
+    "popup_cro": {
+      "category": "security",
+      "tags": [
+        "popup",
+        "cro"
+      ]
+    },
+    "postmortem_writing": {
+      "category": "security",
+      "tags": [
+        "postmortem",
+        "writing"
+      ]
+    },
+    "quant_analyst": {
+      "category": "security",
+      "tags": [
+        "quant",
+        "analyst"
+      ]
+    },
+    "red_team_tactics": {
+      "category": "security",
+      "tags": [
+        "red",
+        "team",
+        "tactics"
+      ]
+    },
+    "red_team_tools": {
+      "category": "security",
+      "tags": [
+        "red",
+        "team"
+      ]
+    },
+    "research_engineer": {
+      "category": "security",
+      "tags": [
+        "research"
+      ]
+    },
+    "reverse_engineer": {
+      "category": "security",
+      "tags": [
+        "reverse"
+      ]
+    },
+    "risk_manager": {
+      "category": "security",
+      "tags": [
+        "risk",
+        "manager"
+      ]
+    },
+    "risk_metrics_calculation": {
+      "category": "security",
+      "tags": [
+        "risk",
+        "metrics",
+        "calculation"
+      ]
+    },
+    "sast_configuration": {
+      "category": "security",
+      "tags": [
+        "sast",
+        "configuration"
+      ]
+    },
+    "scanning_tools": {
+      "category": "security",
+      "tags": [
+        "scanning"
+      ]
+    },
+    "secrets_management": {
+      "category": "security",
+      "tags": [
+        "secrets"
+      ]
+    },
+    "security_auditor": {
+      "category": "security",
+      "tags": [
+        "security",
+        "auditor"
+      ]
+    },
+    "security_bluebook_builder": {
+      "category": "security",
+      "tags": [
+        "security",
+        "bluebook",
+        "builder"
+      ]
+    },
+    "security_compliance_compliance_check": {
+      "category": "security",
+      "tags": [
+        "security",
+        "compliance",
+        "check"
+      ]
+    },
+    "security_requirement_extraction": {
+      "category": "security",
+      "tags": [
+        "security",
+        "requirement",
+        "extraction"
+      ]
+    },
+    "security_scanning_security_dependencies": {
+      "category": "security",
+      "tags": [
+        "security",
+        "scanning",
+        "dependencies"
+      ]
+    },
+    "security_scanning_security_hardening": {
+      "category": "security",
+      "tags": [
+        "security",
+        "scanning",
+        "hardening"
+      ]
+    },
+    "security_scanning_security_sast": {
+      "category": "security",
+      "tags": [
+        "security",
+        "scanning",
+        "sast"
+      ]
+    },
+    "seo_authority_builder": {
+      "category": "security",
+      "tags": [
+        "seo",
+        "authority",
+        "builder"
+      ]
+    },
+    "service_mesh_expert": {
+      "category": "security",
+      "tags": [
+        "service",
+        "mesh"
+      ]
+    },
+    "smtp_penetration_testing": {
+      "category": "security",
+      "tags": [
+        "smtp",
+        "penetration"
+      ]
+    },
+    "solidity_security": {
+      "category": "security",
+      "tags": [
+        "solidity",
+        "security"
+      ]
+    },
+    "sql_injection_testing": {
+      "category": "security",
+      "tags": [
+        "sql",
+        "injection"
+      ]
+    },
+    "ssh_penetration_testing": {
+      "category": "security",
+      "tags": [
+        "ssh",
+        "penetration"
+      ]
+    },
+    "stride_analysis_patterns": {
+      "category": "security",
+      "tags": [
+        "stride"
+      ]
+    },
+    "stripe_integration": {
+      "category": "security",
+      "tags": [
+        "stripe",
+        "integration"
+      ]
+    },
+    "terraform_specialist": {
+      "category": "security",
+      "tags": [
+        "terraform"
+      ]
+    },
+    "threat_mitigation_mapping": {
+      "category": "security",
+      "tags": [
+        "threat",
+        "mitigation",
+        "mapping"
+      ]
+    },
+    "threat_modeling_expert": {
+      "category": "security",
+      "tags": [
+        "threat",
+        "modeling"
+      ]
+    },
+    "top_web_vulnerabilities": {
+      "category": "security",
+      "tags": [
+        "top",
+        "web",
+        "vulnerabilities"
+      ]
+    },
+    "twilio_communications": {
+      "category": "security",
+      "tags": [
+        "twilio",
+        "communications"
+      ]
+    },
+    "ui_visual_validator": {
+      "category": "security",
+      "tags": [
+        "ui",
+        "visual",
+        "validator"
+      ]
+    },
+    "using_neon": {
+      "category": "security",
+      "tags": [
+        "using",
+        "neon"
+      ]
+    },
+    "varlock_claude_skill": {
+      "category": "security",
+      "tags": [
+        "varlock",
+        "claude",
+        "skill"
+      ]
+    },
+    "vulnerability_scanner": {
+      "category": "security",
+      "tags": [
+        "vulnerability",
+        "scanner"
+      ]
+    },
+    "web_design_guidelines": {
+      "category": "security",
+      "tags": [
+        "web",
+        "guidelines"
+      ]
+    },
+    "wordpress_penetration_testing": {
+      "category": "security",
+      "tags": [
+        "wordpress",
+        "penetration"
+      ]
+    },
+    "xss_html_injection": {
+      "category": "security",
+      "tags": [
+        "xss",
+        "html",
+        "injection"
+      ]
+    },
+    "ab_test_setup": {
+      "category": "testing",
+      "tags": [
+        "ab",
+        "setup"
+      ]
+    },
+    "conductor_implement": {
+      "category": "testing",
+      "tags": [
+        "conductor",
+        "implement"
+      ]
+    },
+    "conductor_revert": {
+      "category": "testing",
+      "tags": [
+        "conductor",
+        "revert"
+      ]
+    },
+    "debugger": {
+      "category": "testing",
+      "tags": [
+        "debugger"
+      ]
+    },
+    "dependency_upgrade": {
+      "category": "testing",
+      "tags": [
+        "dependency",
+        "upgrade"
+      ]
+    },
+    "pentest_commands": {
+      "category": "testing",
+      "tags": [
+        "pentest",
+        "commands"
+      ]
+    },
+    "performance_testing_review_multi_agent_review": {
+      "category": "testing",
+      "tags": [
+        "performance",
+        "multi",
+        "agent"
+      ]
+    },
+    "playwright_skill": {
+      "category": "testing",
+      "tags": [
+        "playwright",
+        "skill"
+      ]
+    },
+    "pypict_skill": {
+      "category": "testing",
+      "tags": [
+        "pypict",
+        "skill"
+      ]
+    },
+    "screen_reader_testing": {
+      "category": "testing",
+      "tags": [
+        "screen",
+        "reader"
+      ]
+    },
+    "startup_analyst": {
+      "category": "testing",
+      "tags": [
+        "startup",
+        "analyst"
+      ]
+    },
+    "startup_metrics_framework": {
+      "category": "testing",
+      "tags": [
+        "startup",
+        "metrics",
+        "framework"
+      ]
+    },
+    "systematic_debugging": {
+      "category": "testing",
+      "tags": [
+        "systematic",
+        "debugging"
+      ]
+    },
+    "tdd_workflow": {
+      "category": "testing",
+      "tags": [
+        "tdd"
+      ]
+    },
+    "tdd_workflows_tdd_cycle": {
+      "category": "testing",
+      "tags": [
+        "tdd",
+        "cycle"
+      ]
+    },
+    "tdd_workflows_tdd_green": {
+      "category": "testing",
+      "tags": [
+        "tdd",
+        "green"
+      ]
+    },
+    "tdd_workflows_tdd_red": {
+      "category": "testing",
+      "tags": [
+        "tdd",
+        "red"
+      ]
+    },
+    "tdd_workflows_tdd_refactor": {
+      "category": "testing",
+      "tags": [
+        "tdd",
+        "refactor"
+      ]
+    },
+    "test_driven_development": {
+      "category": "testing",
+      "tags": [
+        "driven"
+      ]
+    },
+    "test_fixing": {
+      "category": "testing",
+      "tags": [
+        "fixing"
+      ]
+    },
+    "unit_testing_test_generate": {
+      "category": "testing",
+      "tags": [
+        "unit",
+        "generate"
+      ]
+    },
+    "web3_testing": {
+      "category": "testing",
+      "tags": [
+        "web3"
+      ]
+    },
+    "agent_orchestration_improve_agent": {
+      "category": "workflow",
+      "tags": [
+        "agent",
+        "improve"
+      ]
+    },
+    "agent_orchestration_multi_agent_optimize": {
+      "category": "workflow",
+      "tags": [
+        "agent",
+        "multi",
+        "optimize"
+      ]
+    },
+    "billing_automation": {
+      "category": "workflow",
+      "tags": [
+        "billing"
+      ]
+    },
+    "changelog_automation": {
+      "category": "workflow",
+      "tags": [
+        "changelog"
+      ]
+    },
+    "conductor_manage": {
+      "category": "workflow",
+      "tags": [
+        "conductor",
+        "manage"
+      ]
+    },
+    "conductor_new_track": {
+      "category": "workflow",
+      "tags": [
+        "conductor",
+        "new",
+        "track"
+      ]
+    },
+    "conductor_status": {
+      "category": "workflow",
+      "tags": [
+        "conductor",
+        "status"
+      ]
+    },
+    "conductor_validator": {
+      "category": "workflow",
+      "tags": [
+        "conductor",
+        "validator"
+      ]
+    },
+    "email_sequence": {
+      "category": "workflow",
+      "tags": [
+        "email",
+        "sequence"
+      ]
+    },
+    "full_stack_orchestration_full_stack_feature": {
+      "category": "workflow",
+      "tags": [
+        "full",
+        "stack"
+      ]
+    },
+    "git_pushing": {
+      "category": "workflow",
+      "tags": [
+        "git",
+        "pushing"
+      ]
+    },
+    "kaizen": {
+      "category": "workflow",
+      "tags": [
+        "kaizen"
+      ]
+    },
+    "mermaid_expert": {
+      "category": "workflow",
+      "tags": [
+        "mermaid"
+      ]
+    },
+    "pdf_official": {
+      "category": "workflow",
+      "tags": [
+        "pdf",
+        "official"
+      ]
+    },
+    "team_collaboration_issue": {
+      "category": "workflow",
+      "tags": [
+        "team",
+        "collaboration",
+        "issue"
+      ]
+    },
+    "track_management": {
+      "category": "workflow",
+      "tags": [
+        "track"
+      ]
+    }
+  }
+}

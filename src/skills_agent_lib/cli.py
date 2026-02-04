@@ -29,7 +29,7 @@ CORE_SKILLS = [
 
 def load_catalog():
     """Loads the skill catalog JSON if available."""
-    catalog_path = TEMPLATE_DIR / ".agents" / "skill_catalog.json"
+    catalog_path = TEMPLATE_DIR / ".agent" / "skill_catalog.json"
     
     if catalog_path.exists():
         try:
@@ -133,7 +133,7 @@ def main():
 @click.option("--category", help="Install all skills from a specific category (e.g., 'data-ai')")
 @click.option("--tag", help="Install all skills with a specific tag (e.g., 'python')")
 def init(minimal, agents_md_only, all_skills, category, tag):
-    """Initialize .agents and AGENTS.md structure"""
+    """Initialize .agent and AGENTS.md structure"""
     cwd = Path.cwd()
     
     # 1. Handle AGENTS.md
@@ -152,11 +152,11 @@ def init(minimal, agents_md_only, all_skills, category, tag):
     if agents_md_only:
         return
 
-    # 2. Handle .agents folder
-    agents_dir = cwd / ".agents"
+    # 2. Handle .agent folder
+    agents_dir = cwd / ".agent"
     agents_dir.mkdir(exist_ok=True)
     
-    template_agents_dir = TEMPLATE_DIR / ".agents"
+    template_agents_dir = TEMPLATE_DIR / ".agent"
     if template_agents_dir.exists():
         # Copy everything EXCEPT skills (handled separately)
         for item in template_agents_dir.iterdir():
@@ -169,18 +169,18 @@ def init(minimal, agents_md_only, all_skills, category, tag):
                 # mkdir and copy contents (or copytree if not exists)
                 if not dest.exists():
                     shutil.copytree(item, dest)
-                    console.print(f"[green][OK][/green] Created .agents/{item.name}/")
+                    console.print(f"[green][OK][/green] Created .agent/{item.name}/")
                 else:
                     # If folder exists, copy individual files (don't overwrite whole folder)
                     for subitem in item.iterdir():
                         if subitem.is_file() and not (dest / subitem.name).exists():
                             shutil.copy(subitem, dest / subitem.name)
-                            console.print(f"[green][OK][/green] Added {subitem.name} to .agents/{item.name}/")
+                            console.print(f"[green][OK][/green] Added {subitem.name} to .agent/{item.name}/")
             else:
                 # For files like prd.md, status.md
                 if not dest.exists():
                     shutil.copy(item, dest)
-                    console.print(f"[green][OK][/green] Created .agents/{item.name}")
+                    console.print(f"[green][OK][/green] Created .agent/{item.name}")
         
         # 3. Handle skills (unless minimal)
         if not minimal:
@@ -229,7 +229,7 @@ def init(minimal, agents_md_only, all_skills, category, tag):
                         for s in sorted(extracted_skills):
                              console.print(f"[blue][INFO][/blue] Added skill: {s}")
     
-    console.print("\n[bold green]Successfully initialized .agents structure![/bold green]")
+    console.print("\n[bold green]Successfully initialized .agent structure![/bold green]")
 
 @main.command(name="list")
 @click.option("--category", help="Filter by category")
@@ -254,7 +254,7 @@ def list_skills(category, tag, list_categories):
             console.print("[red]Catalog not found. Cannot list categories.[/red]")
         return
 
-    skills_dir = TEMPLATE_DIR / ".agents" / "skills"
+    skills_dir = TEMPLATE_DIR / ".agent" / "skills"
     if not skills_dir.exists():
         console.print("[red]Error: Templates not found.[/red]")
         return
@@ -303,7 +303,7 @@ def list_skills(category, tag, list_categories):
 @click.argument("name_or_url")
 def add(name_or_url):
     """Add a skill from local library or GitHub URL"""
-    dest_dir = Path.cwd() / ".agents" / "skills"
+    dest_dir = Path.cwd() / ".agent" / "skills"
     dest_dir.mkdir(parents=True, exist_ok=True)
 
     if name_or_url.startswith("http"):
@@ -320,7 +320,7 @@ def add(name_or_url):
     else:
         # Local Add
         skill_name = name_or_url
-        src_skill = TEMPLATE_DIR / ".agents" / "skills" / skill_name
+        src_skill = TEMPLATE_DIR / ".agent" / "skills" / skill_name
         
         if not src_skill.exists():
             console.print(f"[red]Error: Skill '{skill_name}' not found in local library.[/red]")
@@ -339,10 +339,10 @@ def add(name_or_url):
 def lint(local):
     """Validate skill structures and metadata"""
     if local:
-        skills_dir = TEMPLATE_DIR / ".agents" / "skills"
+        skills_dir = TEMPLATE_DIR / ".agent" / "skills"
     else:
         # Default to current project's skills
-        skills_dir = Path.cwd() / ".agents" / "skills"
+        skills_dir = Path.cwd() / ".agent" / "skills"
         
     if not skills_dir.exists():
         console.print(f"[red]Error: Skills directory not found at {skills_dir}[/red]")
@@ -370,11 +370,11 @@ def lint(local):
 @click.option("--force", is_flag=True, help="Overwrite modified skills")
 def update(force):
     """Update project skills from template library"""
-    project_skills_dir = Path.cwd() / ".agents" / "skills"
-    template_skills_dir = TEMPLATE_DIR / ".agents" / "skills"
+    project_skills_dir = Path.cwd() / ".agent" / "skills"
+    template_skills_dir = TEMPLATE_DIR / ".agent" / "skills"
     
     if not project_skills_dir.exists():
-        console.print("[red]Error: .agents/skills not found in current directory.[/red]")
+        console.print("[red]Error: .agent/skills not found in current directory.[/red]")
         return
         
     table = Table(title="Skill Update Status")

@@ -5,7 +5,7 @@
 
 **Portable agentic skills library for professional AI engineering.**
 
-`skills-agent` is a CLI tool that scaffolds industry-standard `.agents` structures into any project. It imbues your AI coding assistants with project-agnostic "expertise" across the entire software lifecycle.
+`skills-agent` is a CLI tool that scaffolds industry-standard `.agent` structures into any project. It imbues your AI coding assistants with project-agnostic "expertise" across the entire software lifecycle.
 
 ---
 
@@ -17,7 +17,7 @@ Initialize a new project with best-practice agent context in seconds:
 # Install the library
 pip install skills-agent-lib
 
-# Scaffold the .agents structure and AGENTS.md
+# Scaffold the .agent structure and AGENTS.md
 skills-agent init
 ```
 
@@ -67,7 +67,7 @@ When you run `skills-agent init`, it creates:
 ```text
 .
 ├── AGENTS.md           # High-level context for AI agents
-└── .agents/
+└── .agent/
     ├── skills/         # Modular expertise (SKILL.md files)
     ├── guides/         # Project-specific style & architecture docs
     ├── plans/          # Active implementation plans and RFCs

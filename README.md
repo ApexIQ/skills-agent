@@ -1,11 +1,11 @@
-# 🧠 skills-agent
+# 🧠 skillsmith
 
-[![PyPI version](https://img.shields.io/pypi/v/skills-agent-lib.svg)](https://pypi.org/project/skills-agent-lib/)
+[![PyPI version](https://img.shields.io/pypi/v/skillsmith.svg)](https://pypi.org/project/skillsmith/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Portable agentic skills library for professional AI engineering.**
 
-`skills-agent` is a CLI tool that scaffolds industry-standard `.agent` structures into any project. It imbues your AI coding assistants with project-agnostic "expertise" across the entire software lifecycle.
+`skillsmith` is a CLI tool that scaffolds industry-standard `.agent` structures into any project. It imbues your AI coding assistants with project-agnostic "expertise" across the entire software lifecycle.
 
 ---
 
@@ -15,10 +15,10 @@ Initialize a new project with best-practice agent context in seconds:
 
 ```bash
 # Install the library
-pip install skills-agent-lib
+pip install skillsmith
 
 # Scaffold the .agent structure and AGENTS.md
-skills-agent init
+skillsmith init
 ```
 
 ---
@@ -48,7 +48,7 @@ The library contains **626 skills** across 9 major categories:
 8. **Testing** (22 skills)
 9. **Workflow** (16 skills)
 
-Run `skills-agent list --list-categories` to explore.
+Run `skillsmith list --list-categories` to explore.
 
 | Category | Skill | Description |
 |----------|-------|-------------|
@@ -62,7 +62,7 @@ Run `skills-agent list --list-categories` to explore.
 
 ## 📖 Directory Structure
 
-When you run `skills-agent init`, it creates:
+When you run `skillsmith init`, it creates:
 
 ```text
 .
@@ -83,54 +83,54 @@ When you run `skills-agent init`, it creates:
 ### Initialize Project
 Scaffold the full structure including all 23 skills.
 ```bash
-skills-agent init
+skillsmith init
 ```
 
 ### Minimal Scaffolding
 Create the directory structure and templates without the pre-built skills.
 ```bash
-skills-agent init --minimal
+skillsmith init --minimal
 ```
 
 ### Install by Category or Tag
 Install bundles of skills for specific domains.
 ```bash
 # Install all Security skills
-skills-agent init --category security
+skillsmith init --category security
 
 # Install all Python skills
-skills-agent init --tag python
+skillsmith init --tag python
 ```
 
 ### List Available Skills
 View the library of portable expertise.
 ```bash
-skills-agent list
+skillsmith list
 
 # Filter by category
-skills-agent list --category data-ai
+skillsmith list --category data-ai
 
 # Filter by tag
-skills-agent list --tag react
+skillsmith list --tag react
 ```
 
 ### Update Skills
 Sync local project skills with the library and latest best practices.
 ```bash
-skills-agent update
+skillsmith update
 ```
 
 ### Validate Skills
 Verify skill structure, metadata, and link integrity.
 ```bash
-skills-agent lint --local
+skillsmith lint --local
 ```
 
 ---
 
 ## 🗺️ Future Plans
 
-We are evolving `skills-agent` into a central hub for agentic expertise. Our upcoming roadmap includes:
+We are evolving `skillsmith` into a central hub for agentic expertise. Our upcoming roadmap includes:
 
 - **Central Skill Registry**: A hosted platform to browse, search, and share community-verified skills.
 - **Framework Integrations**: Native scaffolding for Agno, LangChain, CrewAI, and more.

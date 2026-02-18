@@ -80,7 +80,9 @@ As the skills library Grows, projects will need a way to keep their local skills
 ## 13. Revision History
 - [2026-01-20] Proposed Versioning & Update module.
 - [2026-02-18] Added v0.3.0 Universal Agent Platform: platform rule files, GSD state templates, smart append logic.
-- [2026-02-18] Added v0.3.1 Developer Experience & Compliance features (see below).
+- [2026-02-18] Added v0.3.1 Developer Experience & Compliance features: doctor, budget, lint, compose.
+- [2026-02-18] Released v0.5.2: Universal OS compatibility, PATH detection, `python -m skillsmith` support.
+- [2026-02-19] Released v0.5.3: Restored full 24MB skill library (625+ skills), fixed `init --all` truncated zip bug.
 
 ## 14. Developer Experience & Compliance (v0.3.1)
 

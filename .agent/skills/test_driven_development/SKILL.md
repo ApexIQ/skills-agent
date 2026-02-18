@@ -2,6 +2,7 @@
 version: 0.1.0
 name: test-driven-development
 description: Use this skill when developing new features using TDD. It guides through writing failing tests first, then implementing code to pass them.
+tags: [testing, tdd, unit-tests, quality]
 ---
 
 # 🔴🟢♻️ Test-Driven Development (TDD)

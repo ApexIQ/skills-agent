@@ -2,6 +2,7 @@
 version: 0.1.0
 name: agno-ai-best-practices
 description: Use this skill when building AI agents with frameworks like Agno, LangChain, or similar. It defines agent architecture, tool design, and reliability standards.
+tags: [agents, ai, framework, langchain, agno]
 ---
 
 # 🧠 AI Agent Best Practices

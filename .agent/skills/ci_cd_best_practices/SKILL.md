@@ -2,6 +2,7 @@
 version: 0.1.0
 name: ci-cd-best-practices
 description: Use this skill when setting up or improving CI/CD pipelines. Covers automation, testing, and deployment best practices.
+tags: [devops, ci, cd, pipeline, deployment, automation]
 ---
 
 # 🚀 CI/CD Best Practices

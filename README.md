@@ -3,9 +3,9 @@
 [![PyPI version](https://img.shields.io/pypi/v/skillsmith.svg)](https://pypi.org/project/skillsmith/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Portable agentic skills library for professional AI engineering.**
+**The universal agent platform. One install. Every AI coding tool. Instantly smart.**
 
-`skillsmith` is a CLI tool that scaffolds industry-standard `.agent` structures into any project. It imbues your AI coding assistants with project-agnostic "expertise" across the entire software lifecycle.
+`skillsmith` is a CLI tool that scaffolds industry-standard `.agent` structures into any project and automatically configures **every major AI coding assistant** — Gemini CLI, Claude Code, Cursor, Windsurf, and GitHub Copilot — to use your project's skills, context, and workflows.
 
 ---
 
@@ -25,13 +25,24 @@ skillsmith init
 
 ## ✨ Key Features
 
+- **🌐 Universal Agent Platform** *(v0.3.0)*: Auto-generates platform-specific config files for Gemini, Claude, Cursor, Windsurf, and Copilot.
 - **600+ Skills (Categorized)**: Massive library organized into 9 broad categories (Security, Data-AI, Infrastructure...).
-- **Tag-Based Bundles**: Install skills by topic tags (e.g., `python`, `react`, `aws`) using simple CLI flags.
+- **GSD Protocol**: Built-in Discuss → Plan → Execute → Verify workflow for reliable agent output.
+- **Smart Append**: If platform config files already exist, skillsmith appends its config without overwriting your rules.
 - **23 Core Skills**: Out-of-the-box expertise for TDD, Security Audits, Context Engineering, and more.
 - **AGENTS.md Standard**: Native support for the [agents.md](https://agents.md) open standard ("README for Agents").
-- **Agentic Workflows**: Pre-defined templates for agentic loops, sub-agent coordination, and memory management.
-- **Project Structure**: Scaffolds dedicated folders for `guides/`, `plans/`, and `workflows/`.
+- **State Management**: `PROJECT.md`, `ROADMAP.md`, and `STATE.md` templates prevent AI context rot.
 - **Portable & Modular**: Add only the skills you need for your specific tech stack.
+
+### 🔌 Platform Compatibility
+
+| Platform | Auto-Generated File | Format Source |
+|---|---|---|
+| **Gemini CLI** | `GEMINI.md` | [geminicli.com](https://geminicli.com) |
+| **Claude Code** | `CLAUDE.md` | [docs.anthropic.com](https://docs.anthropic.com) |
+| **Cursor** | `.cursorrules` + `.cursor/rules/skillsmith.mdc` | [cursor.com/docs](https://cursor.com/docs) |
+| **Windsurf** | `.windsurfrules` | [docs.windsurf.com](https://docs.windsurf.com) |
+| **GitHub Copilot** | `.github/copilot-instructions.md` | [docs.github.com](https://docs.github.com) |
 
 ---
 
@@ -66,14 +77,22 @@ When you run `skillsmith init`, it creates:
 
 ```text
 .
-├── AGENTS.md           # High-level context for AI agents
+├── AGENTS.md                          # Universal agent instructions (Codex, OpenCode)
+├── GEMINI.md                          # Gemini CLI auto-loads this
+├── CLAUDE.md                          # Claude Code auto-loads this
+├── .cursorrules                       # Cursor auto-loads this
+├── .windsurfrules                     # Windsurf auto-loads this
+├── .cursor/rules/skillsmith.mdc       # Cursor modern rule format
+├── .github/copilot-instructions.md    # GitHub Copilot auto-loads this
 └── .agent/
     ├── skills/         # Modular expertise (SKILL.md files)
     ├── guides/         # Project-specific style & architecture docs
     ├── plans/          # Active implementation plans and RFCs
     ├── workflows/      # Automated tasks and deployment templates
-    ├── prd.md          # Standard blueprint for new features
-    └── status.md       # Global project state tracker
+    ├── PROJECT.md      # Vision, tech stack, architecture
+    ├── ROADMAP.md      # Strategic milestones and phases
+    ├── STATE.md        # Current task context (read FIRST every session)
+    └── prd.md          # Standard blueprint for new features
 ```
 
 ---
@@ -123,19 +142,50 @@ skillsmith update
 ### Validate Skills
 Verify skill structure, metadata, and link integrity.
 ```bash
+# Basic validation
 skillsmith lint --local
+
+# AgentSkills.io standard compliance (adopted by Anthropic, Microsoft, OpenAI, Google)
+skillsmith lint --spec agentskills
+```
+
+### Compose a Workflow
+Generate a workflow by composing relevant skills for a goal.
+```bash
+skillsmith compose "build a saas mvp"
+skillsmith compose "fix a security vulnerability" --max-skills 5
+```
+Outputs a numbered workflow `.md` to `.agent/workflows/<goal-slug>.md`.
+
+### Health Check
+Verify your entire skillsmith setup across all AI platforms.
+```bash
+skillsmith doctor
+
+# Auto-fix missing platform files
+skillsmith doctor --fix
+```
+
+### Context Budget
+Analyze token usage across all platform files and skills.
+```bash
+skillsmith budget
 ```
 
 ---
 
-## 🗺️ Future Plans
+## 🗺️ Roadmap
 
-We are evolving `skillsmith` into a central hub for agentic expertise. Our upcoming roadmap includes:
+### ✅ Released
+- **v0.1.0** — Core CLI, AGENTS.md standard, skill scaffolding.
+- **v0.2.0** — 600+ skills, GSD workflow integration, categories & tags.
+- **v0.3.0** — Universal Agent Platform: auto-generates config for Gemini, Claude, Cursor, Windsurf, Copilot. GSD state files (PROJECT.md, ROADMAP.md, STATE.md). Smart append (never overwrites existing config).
 
+### 🔜 Planned
+- **v0.4.0** — Bundles (role-based curated skill sets: Web Wizard, Security Engineer, etc.).
+- **v0.5.0** — Workflows (ordered multi-step execution playbooks).
 - **Central Skill Registry**: A hosted platform to browse, search, and share community-verified skills.
-- **Framework Integrations**: Native scaffolding for Agno, LangChain, CrewAI, and more.
-- **TUI Mode**: An interactive terminal interface for selecting and managing skills.
-- **Agent Self-Installation**: APIs that allow agents to autonomously search for and install the skills they need to complete a task.
+- **Agent Self-Installation**: APIs that allow agents to autonomously search for and install skills.
 
 ---
 

@@ -2,6 +2,7 @@
 version: 0.1.0
 name: prompt-engineering
 description: Use this skill when crafting effective prompts for AI agents. Covers clarity, context, examples, and output formatting.
+tags: [prompts, ai, llm, instructions, context]
 ---
 
 # ✍️ Prompt Engineering

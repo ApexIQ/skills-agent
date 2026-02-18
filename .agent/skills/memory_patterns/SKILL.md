@@ -2,6 +2,7 @@
 version: 0.1.0
 name: memory-patterns
 description: Use this skill when managing agent context and memory. Covers short-term vs long-term memory, context compaction, and persistent note-taking patterns.
+tags: [memory, context, agents, persistence, notes]
 ---
 
 # 🧠 Memory Patterns

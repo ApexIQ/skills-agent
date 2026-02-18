@@ -1,4 +1,5 @@
 import os
+import sys
 import shutil
 import click
 import requests
@@ -375,67 +376,81 @@ def init(minimal, agents_md_only, all_skills, category, tag):
     console.print("\n[bold green]Successfully initialized .agent structure![/bold green]")
 
 @main.command(name="list")
-@click.option("--category", help="Filter by category")
-@click.option("--tag", help="Filter by tag")
-@click.option("--list-categories", is_flag=True, help="Show all available categories")
+@click.option("--category", help="Filter by category (e.g. development, security, data-ai)")
+@click.option("--tag", help="Filter by tag (e.g. react, nextjs, python, aws)")
+@click.option("--list-categories", is_flag=True, help="Show all available categories and popular tags")
 def list_skills(category, tag, list_categories):
-    """List available portable skills (optional specific filters)"""
-    
+    """List available skills from the catalog (625+ skills). Filter by --category or --tag."""
+
     catalog = load_catalog()
-    
+
     if list_categories:
         if catalog:
-            console.print("[bold cyan]Available Categories:[/bold cyan]")
+            console.print("\n[bold cyan]Available Categories:[/bold cyan]")
             for cat in catalog.get("categories", []):
-                console.print(f"- {cat}")
-            console.print("\n[bold cyan]Top Tags (Try --tag <name>):[/bold cyan]")
-            # Just show a few common ones as hints
-            common_tags = ["python", "react", "security", "seo", "agent", "aws"]
-            for t in common_tags:
-                console.print(f"- {t}")
+                console.print(f"  - {cat}")
+
+            # Collect all unique tags from the catalog, sorted by frequency
+            tag_counts: dict = {}
+            for skill_data in catalog.get("skills", {}).values():
+                for t in skill_data.get("tags", []):
+                    tag_counts[t] = tag_counts.get(t, 0) + 1
+            top_tags = sorted(tag_counts, key=lambda t: tag_counts[t], reverse=True)[:20]
+
+            console.print("\n[bold cyan]Popular Tags (use with --tag):[/bold cyan]")
+            for t in top_tags:
+                console.print(f"  - {t}  [dim]({tag_counts[t]} skills)[/dim]")
+
+            console.print("\n[dim]Install by category:  skillsmith init --category <name>[/dim]")
+            console.print("[dim]Install by tag:        skillsmith init --tag <name>[/dim]\n")
         else:
             console.print("[red]Catalog not found. Cannot list categories.[/red]")
         return
 
-    skills_dir = TEMPLATE_DIR / ".agent" / "skills"
-    if not skills_dir.exists():
-        console.print("[red]Error: Templates not found.[/red]")
+    # ── Main listing: iterate the catalog (625+ skills), not local template dir ──
+    catalog_skills = catalog.get("skills", {}) if catalog else {}
+
+    if not catalog_skills:
+        console.print("[red]Error: Skill catalog not found or empty.[/red]")
         return
-        
-    title = "Available Skills"
-    if category: title += f" (Category: {category})"
-    if tag: title += f" (Tag: {tag})"
-    
-    table = Table(title=title)
-    table.add_column("Skill", style="cyan")
+
+    title = "Available Skills (catalog)"
+    if category:
+        title += f" — category: {category}"
+    if tag:
+        title += f" — tag: {tag}"
+
+    table = Table(title=title, show_header=True, header_style="bold magenta")
+    table.add_column("Skill", style="cyan", no_wrap=True)
+    table.add_column("Category", style="magenta")
+    table.add_column("Tags", style="dim")
     table.add_column("Description", style="white")
-    
-    for skill_folder in iter_skill_dirs(skills_dir):
-        skill_md = skill_folder / "SKILL.md"
 
-        # Filter logic for list
-        if category or tag:
-            if catalog:
-                skill_data = catalog["skills"].get(skill_folder.name)
-                if not skill_data:
-                    continue
-                if category and skill_data.get("category") != category:
-                    continue
-                if tag and tag.lower() not in skill_data.get("tags", []):
-                    continue
+    count = 0
+    for skill_name, skill_data in sorted(catalog_skills.items()):
+        skill_category = skill_data.get("category", "")
+        skill_tags     = skill_data.get("tags", [])
+        skill_desc     = skill_data.get("description", "No description")
 
-        description = "No description found"
-        if skill_md.exists():
-            with open(skill_md, "r", encoding="utf-8") as f:
-                content = f.read()
-                if "description:" in content:
-                    for line in content.split("\n"):
-                        if "description:" in line:
-                            description = line.split("description:")[1].strip()
-                            break
-        table.add_row(skill_folder.name, description)
-            
+        # Apply filters
+        if category and skill_category != category:
+            continue
+        if tag and tag.lower() not in [t.lower() for t in skill_tags]:
+            continue
+
+        tags_str = ", ".join(skill_tags[:4])
+        if len(skill_tags) > 4:
+            tags_str += f" +{len(skill_tags) - 4}"
+
+        desc_str = skill_desc[:72] + ("..." if len(skill_desc) > 72 else "")
+        table.add_row(skill_name, skill_category, tags_str, desc_str)
+        count += 1
+
     console.print(table)
+    console.print(
+        f"\n[dim]Showing {count} skill(s). "
+        "Install with: skillsmith init --category <name>  or  skillsmith init --tag <name>[/dim]\n"
+    )
 
 @main.command()
 @click.argument("name_or_url")
@@ -643,6 +658,31 @@ def doctor(fix):
     cwd = Path.cwd()
     SKILLSMITH_MARKER = "<!-- Skillsmith -->"
     all_ok = True
+    # ── 0. PATH Detection ─────────────────────────────────────────────────────
+    console.print("[bold]Executable PATH[/bold]")
+    is_on_path = shutil.which("skillsmith") is not None
+    if is_on_path:
+        console.print("  [green][OK][/green] 'skillsmith' command is on your PATH")
+    else:
+        all_ok = False
+        console.print("  [red][!!][/red] 'skillsmith' is NOT on your PATH")
+        
+        # Try to find where it is
+        import sysconfig
+        scripts_dir = sysconfig.get_path("scripts")
+        if not scripts_dir:
+            # Fallback for some systems
+            scripts_dir = str(Path(sys.executable).parent / "Scripts")
+            
+        console.print(f"  [dim]Expected location: {scripts_dir}[/dim]")
+        
+        if sys.platform == "win32":
+            console.print(f"  [yellow]Tip:[/yellow] Run this to fix permanently: [bold]setx PATH \"%PATH%;{scripts_dir}\"[/bold]")
+        else:
+            console.print(f"  [yellow]Tip:[/yellow] Add this to your shell profile: [bold]export PATH=\"$PATH:{scripts_dir}\"[/bold]")
+            
+        console.print("  [blue][INFO][/blue] [bold]Alternative:[/bold] You can always use [bold]python -m skillsmith[/bold] to run the tool.")
+
 
     console.print("\n[bold cyan][ DOCTOR ] Skillsmith Doctor[/bold cyan]\n")
 

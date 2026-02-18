@@ -159,9 +159,25 @@ claude mcp add --transport http skillsmith http://localhost:47731/mcp
 }
 ```
 
+### 6) Troubleshooting & PATH Help
+
+If the `skillsmith` command is not found after installation, you can always use the universal python module execution:
+
+```bash
+python -m skillsmith init
+```
+
+Use the `doctor` command to check for PATH issues and get automatic fix suggestions:
+
+```bash
+python -m skillsmith doctor
+```
+
 ## Current Status
 
-- Package version: `0.5.0`
+- Package version: `0.5.2`
+- CLI scaffolding and management commands are implemented
+- Universal OS compatibility with `python -m skillsmith` and `doctor` PATH detection
 - CLI scaffolding and management commands are implemented
 - Starter lifecycle skills are bundled
 - MCP server is available with optional dependency install

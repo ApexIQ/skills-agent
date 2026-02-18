@@ -33,6 +33,9 @@ tests = [
     (["skillsmith", "budget"],                          "budget"),
     (["skillsmith", "compose", "build a saas mvp"],    "compose 'build a saas mvp'"),
     (["skillsmith", "serve", "--help"],                 "serve --help"),
+    (["skillsmith", "snapshot", "--help"],              "snapshot --help"),
+    (["skillsmith", "snapshot", "--list"],              "snapshot --list"),
+    (["skillsmith", "watch", "--help"],                 "watch --help"),
 ]
 
 passed = sum(run(a, l) for a, l in tests)

@@ -65,6 +65,13 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+docs/
+FEATURE.md
+PATHS.md
+noted_down.md
+.tmp/
+.tmp-tests/
+tmp*/
 
 # PyBuilder
 .pybuilder/

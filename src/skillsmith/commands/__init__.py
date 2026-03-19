@@ -11,6 +11,7 @@ import zipfile
 from pathlib import Path
 from rich.console import Console
 from rich.table import Table
+from .assets_runtime import resolve_runtime_asset
 
 console = Console()
 
@@ -71,9 +72,9 @@ def find_template_skill_dir(skill_name: str):
 
 def load_catalog():
     """Loads the skill catalog JSON if available."""
-    catalog_path = TEMPLATE_DIR / ".agent" / "skill_catalog.json"
+    catalog_path = resolve_runtime_asset(".agent/skill_catalog.json", required=False)
     
-    if catalog_path.exists():
+    if catalog_path and catalog_path.exists():
         try:
             with open(catalog_path, "r", encoding="utf-8") as f:
                 catalog = json.load(f)
@@ -226,6 +227,7 @@ from .rebuild import rebuild_command
 from .serve import serve_command
 from .snapshot import snapshot_command
 from .watch import watch_command
+from .assets import assets_command
 from .context_index import context_index_command
 from .registry import registry_command
 from .registry_service import registry_service_command

@@ -18,6 +18,7 @@ from . import (
     find_template_skill_dir,
     load_catalog,
 )
+from .assets_runtime import resolve_runtime_asset
 from .lockfile import (
     _normalize_publisher_key_rotation,
     _normalize_publisher_keys,
@@ -576,8 +577,12 @@ def _copy_agent_templates(cwd: Path, minimal: bool, all_skills: bool, category: 
     if minimal:
         return
 
-    src_skills_zip = template_agents_dir / "skills.zip"
-    if not src_skills_zip.exists():
+    src_skills_zip = resolve_runtime_asset(".agent/skills.zip", required=False)
+    if not src_skills_zip or not src_skills_zip.exists():
+        console.print(
+            "[yellow][WARN][/yellow] skills.zip is not available. "
+            "Run `skillsmith assets bootstrap` to enable bundled skill installs."
+        )
         return
 
     catalog = load_catalog()

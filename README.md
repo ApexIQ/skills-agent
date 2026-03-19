@@ -73,6 +73,8 @@ After setup, skillsmith creates and manages:
 - `skillsmith update`: Update installed local skills.
 - `skillsmith lint`: Validate skill metadata and structure.
 - `skillsmith rebuild`: Rebuild local catalog from skill files.
+- `skillsmith assets status`: Show optional runtime asset availability.
+- `skillsmith assets bootstrap`: Download/copy runtime assets into local cache.
 
 ### Workflow and Evaluation
 
@@ -171,7 +173,7 @@ uv run --group dev python -m build
 
 ## 9) Current Version
 
-- Package version: `0.6.3`
+- Package version: `0.6.4`
 
 ## License
 

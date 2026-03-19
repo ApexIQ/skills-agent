@@ -17,7 +17,10 @@ def list_command(category, tag, list_categories):
     catalog = load_catalog()
     
     if not catalog:
-        console.print("[red]Error: skill_catalog.json not found. Run 'skillsmith rebuild' to create it.[/red]")
+        console.print(
+            "[red]Error: skill catalog not found. "
+            "Run 'skillsmith assets bootstrap' (or 'skillsmith rebuild') to provide it.[/red]"
+        )
         return
         
     # Catalog is a list in v0.6.0+

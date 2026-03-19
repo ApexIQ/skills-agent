@@ -14,6 +14,10 @@ Reposition `skillsmith` from a static scaffold CLI into a guided, generic agent-
 - Immediate priority is architecture definition and implementation planning.
 
 ## Recent Changes
+- Executed v0.7 packaging-architecture migration: introduced runtime asset resolution/bootstrap surfaces (`skillsmith assets status|bootstrap`) so heavy skill payloads can live outside the default wheel.
+- Hardened build boundaries in `pyproject.toml` by constraining sdist includes to package + core metadata files and excluding heavyweight template zip/bytecode artifacts.
+- Added `V0_7_MIGRATION_PLAN.md` with exact file moves, new command surface, rollout sequence, and backward-compat strategy.
+- Verified migration with `uv run python -m unittest tests.test_assets_runtime -v` and `uv run --group dev python scripts/check_package_quality.py`; resulting artifacts are now ~`0.19 MB` wheel and ~`0.17 MB` sdist.
 - Ran an external black-box validation from a fresh Desktop uv install of `skillsmith==0.6.2` (`C:\Users\vanam\Desktop\skillsmith-e2e-lab`) across 24 happy-path and adversarial scenarios; captured outcomes in `noted_down.md` for remediation planning.
 - Added role-specific operating guidance across AGENTS/CLAUDE/GEMINI (orchestrator, researcher, implementer, reviewer), including explicit handoff contracts; mirrored the same policy into templates and renderer output generation.
 - Compared instruction quality between existing AGENTS/CLAUDE/GEMINI files and a richer workflow-orchestration draft; replaced generic guidance with a balanced execution policy (plan-for-non-trivial, bounded delegation, verification-before-done) and mirrored the update into source templates plus renderer functions.

@@ -6,6 +6,7 @@
 `skillsmith` helps you prepare a project so AI coding tools can understand your project better and work more reliably.
 
 This guide is written for beginners. You can copy and run commands as shown.
+If you are non-technical, use only the quick path below first. You can ignore the advanced sections.
 
 ## 1) Install
 
@@ -34,6 +35,28 @@ skillsmith init --guided
 skillsmith doctor
 skillsmith compose "build a project summary"
 ```
+
+What each command does in plain language:
+
+- `init --guided`: asks simple setup questions and prepares files.
+- `doctor`: checks if setup is healthy.
+- `compose`: gives you a clear step-by-step plan for your goal.
+
+### Non-Technical Quick Path (Copy/Paste)
+
+If this is your first time, run these exact commands and stop there:
+
+```bash
+pip install skillsmith
+skillsmith init --guided
+skillsmith doctor
+skillsmith compose "help me plan my next change"
+```
+
+Expected result:
+
+- `doctor` should show setup checks as OK.
+- `compose` should print a structured plan you can follow.
 
 ## 3) What You Get
 
@@ -79,6 +102,15 @@ skillsmith compose "<goal>"
 ```
 
 ## 4) Command Reference (Simple)
+
+If you are non-technical, start with only these 6 commands:
+
+- `skillsmith init --guided`
+- `skillsmith doctor`
+- `skillsmith compose "<goal>"`
+- `skillsmith sync`
+- `skillsmith report`
+- `skillsmith suggest`
 
 ### Project Setup
 
@@ -260,7 +292,15 @@ skillsmith audit --help
 skillsmith registry-service --help
 ```
 
-## 8) Library vs CLI
+## 8) Tiny Glossary (No Jargon)
+
+- skill: reusable instructions for a specific type of task.
+- profile: project settings saved in `.agent/project_profile.yaml`.
+- context: saved project information used to help AI tools stay accurate.
+- compose: creates a practical plan for a goal.
+- doctor: health check for your project setup.
+
+## 9) Library vs CLI
 
 `skillsmith` is a Python package, but the supported public interface is the CLI.
 
@@ -293,7 +333,7 @@ This is the stable import-first surface for embedding. Use these entry points in
   - Deprecated options keep working for at least one minor release with an explicit warning.
   - Migration path is documented in command help/README when a deprecation is introduced.
 
-## 9) Development
+## 10) Development
 
 Run from source:
 
@@ -307,9 +347,9 @@ Build package artifacts:
 uv run --group dev python -m build
 ```
 
-## 10) Current Version
+## 11) Current Version
 
-- Package version: `0.6.5`
+- Package version: `0.6.8`
 
 ## License
 

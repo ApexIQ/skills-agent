@@ -1,4 +1,4 @@
-﻿[project]
+[project]
 name = "skillsmith"
 version = "0.6.7"
 description = "The premier agentic skills library for professional AI engineering"
